@@ -5,7 +5,11 @@
   "description": "AI learning resource hub workspace for Windows + Ollama + Vibe Coding.",
   "scripts": {
     "check:env": "powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
-    "preview": "powershell -ExecutionPolicy Bypass -File ./scripts/start-preview.ps1",
-    "preview:8080": "powershell -ExecutionPolicy Bypass -File ./scripts/start-preview.ps1 -Port 8080"
+    "preview": "wrangler dev",
+    "preview:8080": "powershell -ExecutionPolicy Bypass -File ./scripts/start-preview.ps1 -Port 8080",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.102.0"
   }
 }
