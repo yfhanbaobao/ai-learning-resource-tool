@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 学习资源小工具</title>
+    <meta
+      name="description"
+      content="整合 Ollama、本地大模型、提示词、代码案例和 AI 工具链接的学习资源站。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Windows + Ollama + Vibe Coding</p>
+          <h1>AI 学习资源小工具</h1>
+          <p class="hero-text">
+            这是一个可继续扩展的静态站骨架，用来汇总 AI 教程、模型入口、提示词模板、代码案例和工具链接。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#resource-grid">直接看资源</a>
+            <a class="button secondary" href="./about.html">关于本站</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h2>上线最小包</h2>
+          <ul>
+            <li>前端静态站</li>
+            <li>GitHub 仓库</li>
+            <li>Cloudflare Pages</li>
+            <li>关于页、隐私页、免责声明</li>
+          </ul>
+        </aside>
+      </header>
+
+      <main class="layout">
+        <section class="main-column">
+          <div class="toolbar card-surface">
+            <label class="search-wrap" for="searchInput">
+              <span>搜索资源</span>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="比如：Ollama、Qwen、提示词、自动化脚本"
+              />
+            </label>
+            <div class="toolbar-actions">
+              <button id="favoriteToggle" class="pill-button" type="button">只看收藏</button>
+              <button id="themeToggle" class="pill-button" type="button">切换主题</button>
+            </div>
+          </div>
+
+          <section class="category-strip card-surface">
+            <div class="section-head">
+              <h2>分类导航</h2>
+              <p id="resultMeta">正在载入资源...</p>
+            </div>
+            <div id="categoryNav" class="category-nav"></div>
+          </section>
+
+          <section class="card-surface">
+            <div class="section-head">
+              <h2>热门资源</h2>
+              <p>支持搜索、分类、一键复制和本地收藏。</p>
+            </div>
+            <div id="resource-grid" class="resource-grid"></div>
+          </section>
+        </section>
+
+        <aside class="side-column">
+          <section class="card-surface checklist-panel">
+            <h2>上线待办</h2>
+            <ul>
+              <li>补装 Git 和 Ollama</li>
+              <li>注册 GitHub 和 Cloudflare</li>
+              <li>补齐隐私政策与免责声明</li>
+              <li>把真实资源换进当前示例数据</li>
+            </ul>
+          </section>
+
+          <section class="card-surface ad-slot">
+            <h2>广告位预留</h2>
+            <p>后面可以放百度广告联盟或其他联盟代码。</p>
+          </section>
+
+          <section class="card-surface ad-slot small">
+            <h2>侧边推荐位</h2>
+            <p>可用于工具分销、友情链接或精选教程。</p>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>AI 学习资源小工具</strong>
+          <p>先做最低上线版，跑通后再接广告和独立域名。</p>
+        </div>
+        <nav>
+          <a href="./about.html">关于本站</a>
+          <a href="./privacy.html">隐私政策</a>
+          <a href="./disclaimer.html">免责声明</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
