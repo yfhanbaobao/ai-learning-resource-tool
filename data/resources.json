@@ -1,0 +1,320 @@
+{
+  "site": {
+    "name": "AI 学习资源小工具",
+    "description": "面向 Windows 本地模型、Vibe Coding 和 AI 学习运营的资源整合站。"
+  },
+  "resources": [
+    {
+      "id": "ollama-windows-fix",
+      "title": "Ollama Windows 部署排错",
+      "category": "Ollama教程",
+      "summary": "适合首页首批内容：安装、启动失败、端口占用、模型拉取慢、环境变量等常见问题。",
+      "href": "https://ollama.com",
+      "copyText": "ollama --version\nollama list\nollama pull qwen2.5:7b",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "ollama",
+        "windows",
+        "本地模型"
+      ]
+    },
+    {
+      "id": "ollama-cursor-link",
+      "title": "Ollama 对接 Cursor / VS Code 思路",
+      "category": "Ollama教程",
+      "summary": "整理本地模型如何给编辑器或代码工作流提供补全、问答和代码解释。",
+      "href": "https://github.com",
+      "copyText": "我在 Windows 本地使用 Ollama，请给我一份从安装到编辑器接入的完整流程。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "ollama",
+        "编辑器",
+        "vibe-coding"
+      ]
+    },
+    {
+      "id": "qwen-model-guide",
+      "title": "Qwen 系列模型入门",
+      "category": "Qwen/DeepSeek代码模型",
+      "summary": "适合介绍模型定位、参数大小选择、日常问答与代码场景区别。",
+      "href": "https://www.modelscope.cn",
+      "copyText": "请对比 Qwen、DeepSeek、Llama 在本地部署时的资源占用与适用场景。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "qwen",
+        "模型对比",
+        "代码"
+      ]
+    },
+    {
+      "id": "deepseek-coder-notes",
+      "title": "DeepSeek 代码模型整理页",
+      "category": "Qwen/DeepSeek代码模型",
+      "summary": "可汇总写代码、改 Bug、解释报错、重构脚本等常用玩法。",
+      "href": "https://huggingface.co",
+      "copyText": "请帮我写一个适合 DeepSeek 代码模型的 Vibe Coding 提示词模板。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "deepseek",
+        "代码",
+        "提示词"
+      ]
+    },
+    {
+      "id": "coding-prompts",
+      "title": "Vibe Coding 提示词模板",
+      "category": "提示词库",
+      "summary": "放常用的生成页面、改样式、修复报错、重构结构、补文档等提示词。",
+      "href": "#",
+      "copyText": "你现在是资深前端工程师，请基于纯静态站技术栈，生成一个 AI 学习资源导航页，包含搜索、分类、收藏、本地缓存和广告位预留。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "prompt",
+        "前端",
+        "模板"
+      ]
+    },
+    {
+      "id": "learning-prompts",
+      "title": "学习提问模板",
+      "category": "提示词库",
+      "summary": "给新手准备“我该先学什么”“报错怎么问”“模型怎么选”这类模板。",
+      "href": "#",
+      "copyText": "请用大白话告诉我：Windows 本地部署大模型，最低配置、推荐配置和避坑点分别是什么？",
+      "status": "active",
+      "priority": "medium",
+      "tags": [
+        "prompt",
+        "学习",
+        "新手"
+      ]
+    },
+    {
+      "id": "image-tutorial",
+      "title": "AI 绘图新手路线",
+      "category": "AI绘图教程",
+      "summary": "可收录提示词基础、风格参考、常见参数理解和免费绘图工具入口。",
+      "href": "https://www.civitai.com",
+      "copyText": "请给我一份适合新手的 AI 绘图学习路线，从提示词到风格控制。",
+      "status": "active",
+      "priority": "medium",
+      "tags": [
+        "绘图",
+        "教程",
+        "新手"
+      ]
+    },
+    {
+      "id": "free-model-sites",
+      "title": "免费大模型网站合集",
+      "category": "免费大模型网站",
+      "summary": "适合放官方站、模型社区、镜像站、开源工具官网等入口。",
+      "href": "https://huggingface.co",
+      "copyText": "请整理一份可公开访问、适合学习的免费 AI 模型与工具网站列表。",
+      "status": "active",
+      "priority": "medium",
+      "tags": [
+        "免费",
+        "模型",
+        "工具"
+      ]
+    },
+    {
+      "id": "automation-cases",
+      "title": "自动化脚本案例页",
+      "category": "自动化脚本案例",
+      "summary": "适合汇总文件整理、批量重命名、网页抓取、日报生成等脚本案例。",
+      "href": "https://github.com",
+      "copyText": "请给我 10 个适合 AI 新手练手的自动化脚本案例，并标明难度。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "自动化",
+        "脚本",
+        "案例"
+      ]
+    },
+    {
+      "id": "cloudflare-pages",
+      "title": "Cloudflare Pages 免费部署",
+      "category": "免费大模型网站",
+      "summary": "可讲清静态站如何从 GitHub 一键上线，以及后续绑定域名。",
+      "href": "https://www.cloudflare.com",
+      "copyText": "请一步一步教我把纯静态网页部署到 Cloudflare Pages。",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "部署",
+        "pages",
+        "上线"
+      ]
+    },
+    {
+      "id": "candidate-2941d647d4edde",
+      "title": "Ever Tried the Vibe Coding Prompt Template?",
+      "category": "提示词库",
+      "summary": "Hacker News discussion signal. Points: 6. Comments: 1.",
+      "href": "https://tinytoolstack.com/app/vibecodingpromptgenerator",
+      "copyText": "请判断这条 HN 资源是否适合 AI 学习资源站：https://tinytoolstack.com/app/vibecodingpromptgenerator",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "hacker-news",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.616Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-1fad44df9457c5",
+      "title": "Show HN: I built a systematic workflow for 'vibe coding'",
+      "category": "提示词库",
+      "summary": "Hacker News discussion signal. Points: 2. Comments: 0.",
+      "href": "https://github.com/KhazP/vibe-coding-prompt-template",
+      "copyText": "请判断这条 HN 资源是否适合 AI 学习资源站：https://github.com/KhazP/vibe-coding-prompt-template",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "hacker-news",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.616Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-0c3e8c35570b66",
+      "title": "frank9306/vibe-coding-guide",
+      "category": "提示词库",
+      "summary": "This repository is a curated collection of personal insights, prompt templates, agent workflows, and practical tips gathered from across the web to master the art of **vibe coding**—building software seamlessly with the ",
+      "href": "https://github.com/frank9306/vibe-coding-guide",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/frank9306/vibe-coding-guide",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-68e16a278cb6d9",
+      "title": "Flyingmiata-droid/vibe-coding-prompt-template-jane",
+      "category": "提示词库",
+      "summary": "GitHub repository for Flyingmiata-droid/vibe-coding-prompt-template-jane",
+      "href": "https://github.com/Flyingmiata-droid/vibe-coding-prompt-template-jane",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/Flyingmiata-droid/vibe-coding-prompt-template-jane",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-a588a1eb31f8ea",
+      "title": "syedrasimali/Prompt2App-startup-build-mvp",
+      "category": "提示词库",
+      "summary": "Prompt2App is a full-stack AI vibe coding platform that converts text prompts into complete React apps using Google Gemini AI. It includes a Monaco editor, live preview, Firebase auth, project saving, templates, and a mo",
+      "href": "https://github.com/syedrasimali/Prompt2App-startup-build-mvp",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/syedrasimali/Prompt2App-startup-build-mvp",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-761738a11cbe0a",
+      "title": "adambar88/VibeCoding",
+      "category": "提示词库",
+      "summary": "Vibe Coding template: 12 AI agents, autonomous SDLC, prompts, and instructions for GitHub Copilot Agent mode",
+      "href": "https://github.com/adambar88/VibeCoding",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/adambar88/VibeCoding",
+      "status": "candidate",
+      "priority": "active",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 4
+    },
+    {
+      "id": "candidate-ab421dcee3c862",
+      "title": "lihaimin0821/vibe-coding-prompt-template-cn",
+      "category": "提示词库",
+      "summary": "vibe-coding提示词模板汉化",
+      "href": "https://github.com/lihaimin0821/vibe-coding-prompt-template-cn",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/lihaimin0821/vibe-coding-prompt-template-cn",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
+      "score": 3
+    },
+    {
+      "id": "candidate-60a649ae5bb7c0",
+      "title": "robertpreshyl/ai-test-ping-pong-game",
+      "category": "Qwen/DeepSeek代码模型",
+      "summary": "A simple 2-player ping pong game built to test DeepSeek-R1:14B LLM capabilities on macOS with Continue.dev on VS Code. Features Pygame integration and local AI development workflows.",
+      "href": "https://github.com/robertpreshyl/ai-test-ping-pong-game",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/robertpreshyl/ai-test-ping-pong-game",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:09.256Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "DeepSeek coder local development workflow",
+      "score": 4
+    },
+    {
+      "id": "candidate-73850bb8858174",
+      "title": "Kohnnn/deepseek-n8n-automate-workflow",
+      "category": "Qwen/DeepSeek代码模型",
+      "summary": "Self-hosted AI Starter Kit is an open, docker compose template that quickly bootstraps a fully featured Local AI and Low Code development environment including Open WebUI for an interface to chat with your N8N agents. No",
+      "href": "https://github.com/Kohnnn/deepseek-n8n-automate-workflow",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/Kohnnn/deepseek-n8n-automate-workflow",
+      "status": "active",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:09.256Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "DeepSeek coder local development workflow",
+      "score": 4
+    }
+  ]
+}

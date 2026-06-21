@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-21",
+  "target_audience": "Windows 本地模型 / Vibe Coding 学习者",
+  "positioning": "AI 学习资源运营台",
+  "update_sources": [
+    "手工精选资源",
+    "社群高频问题",
+    "本地模型学习路径",
+    "工具更新日志"
+  ],
+  "ops_focus": [
+    "资源质检",
+    "学习路径编排",
+    "SEO 页面更新",
+    "运营简报生成",
+    "收藏内容提炼"
+  ]
+}

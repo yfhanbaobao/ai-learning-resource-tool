@@ -17,20 +17,20 @@
           <p class="eyebrow">Windows + Ollama + Vibe Coding</p>
           <h1>AI 学习资源小工具</h1>
           <p class="hero-text">
-            这是一个可继续扩展的静态站骨架，用来汇总 AI 教程、模型入口、提示词模板、代码案例和工具链接。
+            面向 Windows 本地模型和 Vibe Coding 初学者，自动整合教程、提示词、脚本案例和部署路径。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#resource-grid">直接看资源</a>
-            <a class="button secondary" href="./about.html">关于本站</a>
+            <a class="button secondary" href="./data/feed.json">资源 Feed</a>
           </div>
         </div>
         <aside class="hero-panel">
-          <h2>上线最小包</h2>
+          <h2>自动运营包</h2>
           <ul>
-            <li>前端静态站</li>
-            <li>GitHub 仓库</li>
-            <li>Cloudflare Pages</li>
-            <li>关于页、隐私页、免责声明</li>
+            <li>资源数据文件</li>
+            <li>每日运营简报</li>
+            <li>SEO Feed 与 Sitemap</li>
+            <li>学习路径持续更新</li>
           </ul>
         </aside>
       </header>
@@ -63,7 +63,7 @@
           <section class="card-surface">
             <div class="section-head">
               <h2>热门资源</h2>
-              <p>支持搜索、分类、一键复制和本地收藏。</p>
+              <p>支持搜索、分类、一键复制、本地收藏和自动数据更新。</p>
             </div>
             <div id="resource-grid" class="resource-grid"></div>
           </section>
@@ -76,13 +76,13 @@
               <li>补装 Git 和 Ollama</li>
               <li>注册 GitHub 和 Cloudflare</li>
               <li>补齐隐私政策与免责声明</li>
-              <li>把真实资源换进当前示例数据</li>
+              <li>运行自动运营更新脚本</li>
             </ul>
           </section>
 
           <section class="card-surface ad-slot">
             <h2>广告位预留</h2>
-            <p>后面可以放百度广告联盟或其他联盟代码。</p>
+            <p>优先等资源稳定更新后再接广告联盟或工具分销。</p>
           </section>
 
           <section class="card-surface ad-slot small">
@@ -95,7 +95,7 @@
       <footer class="site-footer">
         <div>
           <strong>AI 学习资源小工具</strong>
-          <p>先做最低上线版，跑通后再接广告和独立域名。</p>
+          <p>先做资源自动更新与学习路径，再接广告和独立域名。</p>
         </div>
         <nav>
           <a href="./about.html">关于本站</a>
@@ -105,6 +105,7 @@
       </footer>
     </div>
 
+    <script src="./data-loader.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

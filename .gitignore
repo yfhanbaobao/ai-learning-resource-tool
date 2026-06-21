@@ -9,3 +9,6 @@ docs/setup-status-generated.md
 !.dev.vars.example
 .env*
 !.env.example
+
+# generated local operation logs
+docs/operations/*.log

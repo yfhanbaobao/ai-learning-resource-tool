@@ -1,0 +1,25 @@
+{
+  "max_candidates": 40,
+  "queries": [
+    "Ollama Windows tutorial local LLM",
+    "Qwen coder local model tutorial",
+    "DeepSeek coder local development workflow",
+    "Vibe Coding prompt template",
+    "AI automation script examples beginners",
+    "Cloudflare Pages static site tutorial AI tools"
+  ],
+  "sources": [
+    {
+      "id": "github_repositories",
+      "type": "github_repositories",
+      "enabled": true,
+      "endpoint": "https://api.github.com/search/repositories"
+    },
+    {
+      "id": "hacker_news",
+      "type": "hacker_news_algolia",
+      "enabled": true,
+      "endpoint": "https://hn.algolia.com/api/v1/search"
+    }
+  ]
+}

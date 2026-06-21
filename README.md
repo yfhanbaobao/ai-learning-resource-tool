@@ -1,6 +1,6 @@
 # AI 学习资源小工具
 
-这个目录是我先帮你搭好的本地工作区，目标是服务你后面做一个“AI 学习资源整合站”。
+这个目录是一个“AI 学习资源运营台”的本地工作区，目标用户是 Windows 本地模型、Ollama、Vibe Coding 和 AI 自动化入门学习者。
 
 当前已经准备好的内容：
 - 本地环境检查脚本
@@ -8,6 +8,10 @@
 - 账号注册清单文档
 - 手动安装与部署准备文档
 - 一个可直接本地打开和预览的静态网页骨架
+- 独立资源数据文件 `data/resources.json`
+- 自动运营脚本 `scripts/ops-update.js`
+- 每日运营简报和市场调研报告
+- Feed、Sitemap、robots.txt 自动生成
 
 当前机器实测状态：
 - 已有：`Node.js`、`npm.cmd`、`VS Code`、`Chrome`
@@ -33,6 +37,7 @@
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check-env.ps1
+npm.cmd run ops:update
 powershell -ExecutionPolicy Bypass -File .\scripts\start-preview.ps1
 ```
 
@@ -40,12 +45,14 @@ powershell -ExecutionPolicy Bypass -File .\scripts\start-preview.ps1
 
 ```powershell
 npm.cmd run check:env
+npm.cmd run ops:update
 npm.cmd run preview
 ```
 
 ## 下一步建议
 
-1. 先按 `docs/03-手动安装与部署准备.md` 补装 `Git` 和 `Ollama`
-2. 按 `docs/02-账号注册清单.md` 开始注册账号
-3. 确认本地环境没问题后，我可以继续帮你把这个静态骨架升级成可上线版本
-4. 后面我们再接 `GitHub`、`Cloudflare Pages`、广告位、SEO 页面
+1. 每次更新资源前先改 `data/resources.json`
+2. 运行 `npm.cmd run ops:update` 同步站点数据并生成运营简报
+3. 运行 `npm.cmd run preview` 本地预览
+4. 需要自动化时运行 `scripts/register-daily-ops-task.ps1` 注册每日任务
+5. 后面再接 RSS/API 数据源、GitHub、Cloudflare Pages、广告位和 SEO 页面

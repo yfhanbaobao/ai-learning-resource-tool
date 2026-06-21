@@ -1,28 +1,28 @@
 :root {
   color-scheme: light;
-  --bg: #f7f0e5;
-  --panel: rgba(255, 249, 240, 0.88);
-  --panel-strong: rgba(255, 255, 255, 0.94);
-  --text: #1d1a17;
-  --muted: #63594e;
-  --line: rgba(77, 55, 28, 0.14);
-  --accent: #b5502d;
-  --accent-soft: #f3d9b8;
-  --accent-deep: #6d2d18;
-  --shadow: 0 18px 45px rgba(84, 57, 24, 0.12);
+  --bg: #f4f7f5;
+  --panel: rgba(255, 255, 255, 0.9);
+  --panel-strong: rgba(255, 255, 255, 0.96);
+  --text: #1d252c;
+  --muted: #596675;
+  --line: rgba(35, 49, 64, 0.14);
+  --accent: #287a68;
+  --accent-soft: #d9eee8;
+  --accent-deep: #174f45;
+  --shadow: 0 18px 45px rgba(40, 63, 78, 0.12);
 }
 
 body[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #191512;
-  --panel: rgba(35, 28, 23, 0.92);
-  --panel-strong: rgba(42, 34, 28, 0.98);
-  --text: #f2eadf;
-  --muted: #c6b9ab;
-  --line: rgba(255, 214, 167, 0.12);
-  --accent: #ff8a57;
-  --accent-soft: rgba(255, 138, 87, 0.14);
-  --accent-deep: #ffd3b4;
+  --bg: #11191d;
+  --panel: rgba(24, 34, 39, 0.92);
+  --panel-strong: rgba(30, 43, 49, 0.98);
+  --text: #edf5f2;
+  --muted: #b7c6c2;
+  --line: rgba(195, 223, 216, 0.14);
+  --accent: #62bfa5;
+  --accent-soft: rgba(98, 191, 165, 0.14);
+  --accent-deep: #d9fff3;
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
 }
 
@@ -40,16 +40,16 @@ body {
   font-family: 'Microsoft YaHei UI', 'Segoe UI', sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(255, 209, 132, 0.35), transparent 30%),
-    radial-gradient(circle at right 15%, rgba(181, 80, 45, 0.14), transparent 32%),
-    linear-gradient(180deg, #fff6eb 0%, var(--bg) 40%, #efe3d2 100%);
+    radial-gradient(circle at top left, rgba(90, 150, 178, 0.18), transparent 30%),
+    radial-gradient(circle at right 15%, rgba(40, 122, 104, 0.12), transparent 32%),
+    linear-gradient(180deg, #f9fbfc 0%, var(--bg) 42%, #e9f0ef 100%);
 }
 
 body[data-theme='dark'] {
   background:
-    radial-gradient(circle at top left, rgba(255, 138, 87, 0.18), transparent 30%),
-    radial-gradient(circle at right 15%, rgba(255, 207, 163, 0.08), transparent 32%),
-    linear-gradient(180deg, #161210 0%, var(--bg) 42%, #100d0b 100%);
+    radial-gradient(circle at top left, rgba(98, 191, 165, 0.14), transparent 30%),
+    radial-gradient(circle at right 15%, rgba(90, 150, 178, 0.1), transparent 32%),
+    linear-gradient(180deg, #0f1518 0%, var(--bg) 42%, #0b1012 100%);
 }
 
 body,
@@ -165,7 +165,7 @@ h2 {
 
 .button.primary {
   color: #fff7f1;
-  background: linear-gradient(135deg, var(--accent), #da7346);
+  background: linear-gradient(135deg, var(--accent), #4279a4);
   border-color: transparent;
 }
 
@@ -231,8 +231,8 @@ h2 {
 }
 
 .search-wrap input:focus {
-  border-color: rgba(181, 80, 45, 0.4);
-  box-shadow: 0 0 0 4px rgba(181, 80, 45, 0.12);
+  border-color: rgba(40, 122, 104, 0.42);
+  box-shadow: 0 0 0 4px rgba(40, 122, 104, 0.12);
 }
 
 .toolbar-actions {

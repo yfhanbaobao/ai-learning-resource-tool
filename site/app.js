@@ -1,4 +1,4 @@
-const resources = [
+let resources = [
   {
     id: 'ollama-windows-fix',
     title: 'Ollama Windows 部署排错',
@@ -101,7 +101,22 @@ const resultMeta = document.getElementById('resultMeta');
 const favoriteToggle = document.getElementById('favoriteToggle');
 const themeToggle = document.getElementById('themeToggle');
 
-init();
+bootstrap();
+
+async function bootstrap() {
+  try {
+    if (window.loadSiteData) {
+      const siteData = await window.loadSiteData();
+      if (Array.isArray(siteData.resources) && siteData.resources.length) {
+        resources = siteData.resources.filter((item) => !item.status || item.status === 'active');
+      }
+    }
+  } catch (error) {
+    console.warn('Using embedded resource fallback.', error);
+  }
+
+  init();
+}
 
 function init() {
   applyTheme();

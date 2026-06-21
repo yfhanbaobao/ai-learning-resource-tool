@@ -7,7 +7,10 @@
     "check:env": "powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
     "preview": "wrangler dev",
     "preview:8080": "powershell -ExecutionPolicy Bypass -File ./scripts/start-preview.ps1 -Port 8080",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "ops:update": "node ./scripts/ops-update.js",
+    "agent:resource-search": "node ./scripts/resource-search-agent.js",
+    "ops:daily": "node ./scripts/resource-search-agent.js && node ./scripts/ops-update.js && powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1"
   },
   "devDependencies": {
     "wrangler": "^4.102.0"
