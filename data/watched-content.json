@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-23T12:07:07.331Z",
+  "items": [
+    {
+      "id": "watch-e2330fefe7e289",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Codex-maxxing for long-running work",
+      "href": "https://openai.com/index/codex-maxxing-long-running-work",
+      "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt.",
+      "published_at": "2026-06-22T00:00:00.000Z",
+      "discovered_at": "2026-06-23T12:05:17.082Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 6
+    },
+    {
+      "id": "watch-480508a9ca16ad",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "How Omio is building the future of conversational travel",
+      "href": "https://openai.com/index/omio",
+      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company.",
+      "published_at": "2026-06-23T00:00:00.000Z",
+      "discovered_at": "2026-06-23T12:05:17.081Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-b63e5cb33bb0ec",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "href": "https://openai.com/index/daybreak-securing-the-world",
+      "summary": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.",
+      "published_at": "2026-06-22T10:00:00.000Z",
+      "discovered_at": "2026-06-23T12:05:17.081Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    },
+    {
+      "id": "watch-3696e67c2c9e8a",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "href": "https://openai.com/index/patch-the-planet",
+      "summary": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.",
+      "published_at": "2026-06-22T10:00:00.000Z",
+      "discovered_at": "2026-06-23T12:05:17.081Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    },
+    {
+      "id": "watch-c000018ba1f035",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Predicting model behavior before release by simulating deployment",
+      "href": "https://openai.com/index/deployment-simulation",
+      "summary": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
+      "published_at": "2026-06-16T00:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-4a1a2edfc53fbc",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Introducing the OpenAI Partner Network",
+      "href": "https://openai.com/index/introducing-openai-partner-network",
+      "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "published_at": "2026-06-14T17:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-dd73139d2e3dcd",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "New OpenAI Academy courses for the next era of work",
+      "href": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
+      "published_at": "2026-06-12T10:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 6
+    },
+    {
+      "id": "watch-ddc7b24a91dcf2",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "How Preply combines AI and human tutors to personalize learning",
+      "href": "https://openai.com/index/preply",
+      "summary": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
+      "published_at": "2026-06-12T00:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-043e5abd402665",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "href": "https://openai.com/index/bbva",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "published_at": "2026-06-11T00:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-0fda1a1b5a24b7",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "How an astrophysicist uses Codex to help simulate black holes",
+      "href": "https://openai.com/index/using-codex-to-simulate-black-holes",
+      "summary": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
+      "published_at": "2026-06-11T00:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    },
+    {
+      "id": "watch-450d5ccfb1602d",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "href": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "summary": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
+      "published_at": "2026-06-18T17:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.349Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-9f4dbdd37bfa3b",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Improving health intelligence in ChatGPT",
+      "href": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+      "published_at": "2026-06-18T11:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.349Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-edcdc2401b35c3",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "href": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
+      "published_at": "2026-06-18T08:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.349Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-5ff2f715f1e627",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "href": "https://openai.com/index/ai-chemist-improves-reaction",
+      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
+      "published_at": "2026-06-17T10:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.349Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-381e7f583722c9",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Introducing LifeSciBench",
+      "href": "https://openai.com/index/introducing-life-sci-bench",
+      "summary": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions.",
+      "published_at": "2026-06-17T00:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.349Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-4a975b89e4a0f0",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "href": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+      "published_at": "2026-06-21T23:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.348Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    }
+  ]
+}

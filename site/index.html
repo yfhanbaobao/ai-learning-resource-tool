@@ -3,40 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI 学习资源小工具</title>
+    <meta name="theme-color" content="#1f766c" />
+    <title>AI 学习资源运营台</title>
     <meta
       name="description"
-      content="整合 Ollama、本地大模型、提示词、代码案例和 AI 工具链接的学习资源站。"
+      content="面向 Windows 本地模型、Ollama、Vibe Coding 和 AI 自动化学习者的资源运营台。"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./ui-overrides.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Windows + Ollama + Vibe Coding</p>
-          <h1>AI 学习资源小工具</h1>
+          <p class="eyebrow">Windows 本地模型 / Vibe Coding / 自动化脚本</p>
+          <h1>AI 学习资源运营台</h1>
           <p class="hero-text">
-            面向 Windows 本地模型和 Vibe Coding 初学者，自动整合教程、提示词、脚本案例和部署路径。
+            按学习路径整理 Ollama、本地大模型、提示词、代码案例和部署资源；资源先进入候选池，审核后再公开展示。
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#resource-grid">直接看资源</a>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#resource-grid">查看资源</a>
             <a class="button secondary" href="./data/feed.json">资源 Feed</a>
+            <a class="button secondary" href="./sitemap.xml">Sitemap</a>
           </div>
         </div>
-        <aside class="hero-panel">
-          <h2>自动运营包</h2>
-          <ul>
-            <li>资源数据文件</li>
-            <li>每日运营简报</li>
-            <li>SEO Feed 与 Sitemap</li>
-            <li>学习路径持续更新</li>
-          </ul>
+
+        <aside class="hero-panel" aria-label="运营状态">
+          <h2>运营状态</h2>
+          <dl class="metric-list">
+            <div>
+              <dt>公开资源</dt>
+              <dd id="resourceTotal">--</dd>
+            </div>
+            <div>
+              <dt>资源分类</dt>
+              <dd id="categoryTotal">--</dd>
+            </div>
+            <div>
+              <dt>数据来源</dt>
+              <dd id="dataSourceStatus">加载中</dd>
+            </div>
+          </dl>
+          <p id="dataNotice" class="data-notice" aria-live="polite">正在读取站点数据。</p>
         </aside>
       </header>
 
       <main class="layout">
         <section class="main-column">
+          <section class="path-section card-surface" aria-labelledby="pathTitle">
+            <div class="section-head compact">
+              <div>
+                <h2 id="pathTitle">推荐学习路径</h2>
+                <p>先跑通本地模型，再进入提示词、自动化脚本和部署上线。</p>
+              </div>
+            </div>
+            <ol class="path-list">
+              <li>
+                <strong>本地模型上手</strong>
+                <span>安装 Ollama，选择 Qwen/DeepSeek，解决 Windows 常见报错。</span>
+              </li>
+              <li>
+                <strong>Vibe Coding 训练</strong>
+                <span>用提示词模板完成页面、脚本、排错和重构练习。</span>
+              </li>
+              <li>
+                <strong>自动化与上线</strong>
+                <span>把资源、脚本和静态站部署流程串成可复用工作流。</span>
+              </li>
+            </ol>
+          </section>
+
           <div class="toolbar card-surface">
             <label class="search-wrap" for="searchInput">
               <span>搜索资源</span>
@@ -46,56 +82,79 @@
                 placeholder="比如：Ollama、Qwen、提示词、自动化脚本"
               />
             </label>
-            <div class="toolbar-actions">
-              <button id="favoriteToggle" class="pill-button" type="button">只看收藏</button>
-              <button id="themeToggle" class="pill-button" type="button">切换主题</button>
+            <label class="sort-wrap" for="sortSelect">
+              <span>排序</span>
+              <select id="sortSelect">
+                <option value="priority">优先推荐</option>
+                <option value="category">按分类</option>
+                <option value="title">按标题</option>
+              </select>
+            </label>
+            <div class="toolbar-actions" aria-label="筛选操作">
+              <button id="favoriteToggle" class="pill-button" type="button" aria-pressed="false">只看收藏</button>
+              <button id="themeToggle" class="pill-button" type="button" aria-pressed="false">深色模式</button>
+              <button id="clearFilters" class="pill-button reset-button" type="button">重置筛选</button>
             </div>
           </div>
 
           <section class="category-strip card-surface">
             <div class="section-head">
-              <h2>分类导航</h2>
-              <p id="resultMeta">正在载入资源...</p>
+              <div>
+                <h2>分类导航</h2>
+                <p id="resultMeta" aria-live="polite">正在载入资源...</p>
+              </div>
             </div>
             <div id="categoryNav" class="category-nav"></div>
           </section>
 
           <section class="card-surface">
             <div class="section-head">
-              <h2>热门资源</h2>
-              <p>支持搜索、分类、一键复制、本地收藏和自动数据更新。</p>
+              <div>
+                <h2>精选资源</h2>
+                <p>支持搜索、分类、收藏和复制提示词模板。</p>
+              </div>
             </div>
             <div id="resource-grid" class="resource-grid"></div>
           </section>
         </section>
 
         <aside class="side-column">
-          <section class="card-surface checklist-panel">
-            <h2>上线待办</h2>
-            <ul>
-              <li>补装 Git 和 Ollama</li>
-              <li>注册 GitHub 和 Cloudflare</li>
-              <li>补齐隐私政策与免责声明</li>
-              <li>运行自动运营更新脚本</li>
+          <section class="card-surface ops-panel">
+            <h2>今日 AI 日报</h2>
+            <p id="dailySummary" class="data-notice" aria-live="polite">正在读取今日摘要...</p>
+            <ul id="dailyList" class="daily-list"></ul>
+          </section>
+
+          <section class="card-surface ops-panel">
+            <h2>今日运营动作</h2>
+            <ul class="task-list">
+              <li>检查候选资源，确认后再改为 active。</li>
+              <li>补齐每条资源的摘要、标签和真实链接。</li>
+              <li>运行自动更新脚本，刷新 Feed 与 Sitemap。</li>
             </ul>
           </section>
 
-          <section class="card-surface ad-slot">
-            <h2>广告位预留</h2>
-            <p>优先等资源稳定更新后再接广告联盟或工具分销。</p>
+          <section class="card-surface conversion-panel">
+            <h2>转化入口预留</h2>
+            <p>优先沉淀学习清单、提示词包和本地工具包，再接广告或分销。</p>
+            <a class="text-link" href="./about.html">查看定位说明</a>
           </section>
 
-          <section class="card-surface ad-slot small">
-            <h2>侧边推荐位</h2>
-            <p>可用于工具分销、友情链接或精选教程。</p>
+          <section class="card-surface ops-panel">
+            <h2>数据安全边界</h2>
+            <ul class="task-list">
+              <li>联网搜索结果先进入候选池。</li>
+              <li>页面只展示 active 资源。</li>
+              <li>不执行外部资源中的代码或命令。</li>
+            </ul>
           </section>
         </aside>
       </main>
 
       <footer class="site-footer">
         <div>
-          <strong>AI 学习资源小工具</strong>
-          <p>先做资源自动更新与学习路径，再接广告和独立域名。</p>
+          <strong>AI 学习资源运营台</strong>
+          <p>先做稳定资源更新和学习路径，再做资料包、咨询和自动化服务。</p>
         </div>
         <nav>
           <a href="./about.html">关于本站</a>

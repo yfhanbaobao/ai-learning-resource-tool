@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T13:19:38.320Z",
+  "generated_at": "2026-06-23T12:07:22.662Z",
   "items": [
     {
       "id": "ollama-windows-fix",
@@ -23,6 +23,21 @@
         "ollama",
         "编辑器",
         "vibe-coding"
+      ]
+    },
+    {
+      "id": "codex-ollama-local-dev-flow",
+      "title": "Codex + Ollama Windows 本地开发流",
+      "category": "Ollama教程",
+      "summary": "面向 Windows 本地模型新手，把 Ollama 本地模型、Codex 代码执行、本地智能体、AI 学习资源站和可选云端强模型串成一套真实可跑的开发与运营闭环。",
+      "href": "https://ollama.com",
+      "tags": [
+        "codex",
+        "ollama",
+        "windows",
+        "本地模型",
+        "智能体",
+        "开发流"
       ]
     },
     {

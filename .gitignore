@@ -12,3 +12,4 @@ docs/setup-status-generated.md
 
 # generated local operation logs
 docs/operations/*.log
+logs/

@@ -35,6 +35,24 @@
       ]
     },
     {
+      "id": "codex-ollama-local-dev-flow",
+      "title": "Codex + Ollama Windows 本地开发流",
+      "category": "Ollama教程",
+      "summary": "面向 Windows 本地模型新手，把 Ollama 本地模型、Codex 代码执行、本地智能体、AI 学习资源站和可选云端强模型串成一套真实可跑的开发与运营闭环。",
+      "href": "https://ollama.com",
+      "copyText": "# 1. 检查本地 Ollama 模型\nollama list\nollama pull qwen2.5:7b\nollama pull qwen2.5-coder:7b\n\n# 2. 启动本地智能体控制台\ncd \"D:\\\\AI SPACE\\\\auto-creater\"\npython -m pipeline.webapp --host 127.0.0.1 --port 8765\n\n# 3. 更新 AI 学习资源站数据\ncd \"D:\\\\AI SPACE\\\\ai-learning-resource-tool\"\nnpm.cmd run ops:update\n\n# 4. 交给 Codex / 主控 AI 的提示词\n你是我的本地开发总控。请先判断任务适合本地 Ollama、Codex 执行、还是云端强模型；然后输出任务拆解、要调用的本地智能体、需要更新的文件、验证命令、部署步骤和回滚风险。默认优先保护本地隐私与密钥，不要把 API Key 写入代码或日志.",
+      "status": "active",
+      "priority": "high",
+      "tags": [
+        "codex",
+        "ollama",
+        "windows",
+        "本地模型",
+        "智能体",
+        "开发流"
+      ]
+    },
+    {
       "id": "qwen-model-guide",
       "title": "Qwen 系列模型入门",
       "category": "Qwen/DeepSeek代码模型",
@@ -245,24 +263,6 @@
       "score": 4
     },
     {
-      "id": "candidate-761738a11cbe0a",
-      "title": "adambar88/VibeCoding",
-      "category": "提示词库",
-      "summary": "Vibe Coding template: 12 AI agents, autonomous SDLC, prompts, and instructions for GitHub Copilot Agent mode",
-      "href": "https://github.com/adambar88/VibeCoding",
-      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/adambar88/VibeCoding",
-      "status": "candidate",
-      "priority": "active",
-      "tags": [
-        "github",
-        "auto-discovered"
-      ],
-      "discovered_at": "2026-06-21T10:19:10.197Z",
-      "discovered_by": "resource-search-agent",
-      "source_query": "Vibe Coding prompt template",
-      "score": 4
-    },
-    {
       "id": "candidate-ab421dcee3c862",
       "title": "lihaimin0821/vibe-coding-prompt-template-cn",
       "category": "提示词库",
@@ -314,6 +314,24 @@
       "discovered_at": "2026-06-21T10:19:09.256Z",
       "discovered_by": "resource-search-agent",
       "source_query": "DeepSeek coder local development workflow",
+      "score": 4
+    },
+    {
+      "id": "candidate-761738a11cbe0a",
+      "title": "adambar88/VibeCoding",
+      "category": "提示词库",
+      "summary": "Vibe Coding template: 12 AI agents, autonomous SDLC, prompts, and instructions for GitHub Copilot Agent mode",
+      "href": "https://github.com/adambar88/VibeCoding",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/adambar88/VibeCoding",
+      "status": "candidate",
+      "priority": "active",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-21T10:19:10.197Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "Vibe Coding prompt template",
       "score": 4
     }
   ]

@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "max_items": 80,
+  "fresh_hours": 336,
+  "sources": [
+    {
+      "id": "openai_news",
+      "name": "OpenAI News",
+      "type": "rss",
+      "enabled": true,
+      "url": "https://openai.com/news/rss.xml",
+      "tags": [
+        "official",
+        "model",
+        "ai-news"
+      ]
+    },
+    {
+      "id": "huggingface_blog",
+      "name": "Hugging Face Blog",
+      "type": "rss",
+      "enabled": true,
+      "url": "https://huggingface.co/blog/feed.xml",
+      "tags": [
+        "open-source",
+        "model",
+        "learning"
+      ]
+    },
+    {
+      "id": "github_trending_ai",
+      "name": "GitHub AI Search",
+      "type": "github_search",
+      "enabled": true,
+      "url": "https://api.github.com/search/repositories",
+      "query": "AI agent workflow automation learning resources",
+      "tags": [
+        "github",
+        "open-source",
+        "agent"
+      ]
+    },
+    {
+      "id": "hackernews_ai",
+      "name": "Hacker News AI Search",
+      "type": "hacker_news",
+      "enabled": true,
+      "url": "https://hn.algolia.com/api/v1/search",
+      "query": "AI agents automation local LLM",
+      "tags": [
+        "hacker-news",
+        "signal",
+        "discussion"
+      ]
+    }
+  ],
+  "manual_creators": [
+    {
+      "name": "LIGHT",
+      "platform": "douyin",
+      "profile_url": "https://v.douyin.com/",
+      "tracking_mode": "manual",
+      "profiles": [],
+      "maintained_fields": [
+        "creator_name",
+        "profile_url",
+        "content_url",
+        "topic_tags",
+        "last_checked_at",
+        "notes"
+      ],
+      "watch_actions": [
+        "人工打开重点创作者主页，记录新视频链接和主题标签。",
+        "把值得进入日报的内容补充到候选资源或运营笔记。",
+        "等有合法 API、RSS、导出文件或用户授权数据后再升级自动采集。"
+      ],
+      "note": "抖音没有稳定公开 RSS/API，本地先作为人工关注源记录；后续如有合法 API 或导出文件再接入自动采集。"
+    },
+    {
+      "name": "B站 AI 创作者池",
+      "platform": "bilibili",
+      "profile_url": "https://www.bilibili.com/",
+      "tracking_mode": "manual",
+      "profiles": [],
+      "maintained_fields": [
+        "up_name",
+        "uid",
+        "space_url",
+        "content_url",
+        "topic_tags",
+        "last_checked_at",
+        "notes"
+      ],
+      "watch_actions": [
+        "维护重点 UP 主 UID、主页和主题标签。",
+        "每天人工复核新视频，把高质量内容写入候选池或日报素材。",
+        "后续如有合法 API、RSS、导出文件或用户授权数据，再切换为自动采集。"
+      ],
+      "note": "B站先作为人工关注源维护；可记录具体 UP 主主页、UID、分区和标签，后续如接入合法 API/RSS 或导出文件再自动采集。"
+    }
+  ],
+  "hard_filters": {
+    "max_age_hours": 336,
+    "require_https": true,
+    "reject_title_patterns": [
+      "crypto airdrop",
+      "casino",
+      "adult",
+      "leaked key",
+      "crack",
+      "破解"
+    ],
+    "required_signal_any": [
+      "ai",
+      "agent",
+      "llm",
+      "model",
+      "ollama",
+      "codex",
+      "automation",
+      "workflow",
+      "vibe",
+      "prompt"
+    ]
+  }
+}

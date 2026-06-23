@@ -10,13 +10,15 @@
 - 一个可直接本地打开和预览的静态网页骨架
 - 独立资源数据文件 `data/resources.json`
 - 自动运营脚本 `scripts/ops-update.js`
+- LIGHT 内容追踪脚本 `scripts/content-watch-agent.js`
+- AI 日报生成脚本 `scripts/ai-daily-agent.js`
+- 公开信源和人工关注源配置 `data/content-watch-config.json`
 - 每日运营简报和市场调研报告
 - Feed、Sitemap、robots.txt 自动生成
 
 当前机器实测状态：
-- 已有：`Node.js`、`npm.cmd`、`VS Code`、`Chrome`
-- 缺失：`Git`、`Ollama`
-- 可选优化：`Python` 已有，但版本是 `3.6.1`，能做简单预览，后续若跑新工具建议升级
+- 已有：`Node.js`、`npm.cmd`、`Git`、`Ollama`、`Python 3.14.6`、`VS Code`、`Chrome`
+- 可选优化：Cursor CLI 暂未检测到；VS Code 可正常使用。
 
 ## 目录说明
 
@@ -29,11 +31,7 @@
 
 ## 快速开始
 
-先补齐缺的核心工具：
-- 安装 `Git`
-- 安装 `Ollama`
-
-安装后，建议按下面顺序执行：
+建议按下面顺序执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check-env.ps1
@@ -49,10 +47,63 @@ npm.cmd run ops:update
 npm.cmd run preview
 ```
 
+## LIGHT 内容追踪和 AI 日报
+
+只运行 LIGHT 方案里的内容追踪和 AI 日报：
+
+```powershell
+npm.cmd run ops:light
+```
+
+运行完整每日自动运营链路：
+
+```powershell
+npm.cmd run ops:daily
+```
+
+生成并推送每日站点更新：
+
+```powershell
+npm.cmd run ops:publish
+```
+
+注册每天晚上 20:00 自动生成、提交并推送站点更新：
+
+```powershell
+npm.cmd run ops:register-daily
+```
+
+输出文件：
+
+- `data/watched-content.json`：公开信源追踪候选池。
+- `data/ai-daily.json`：本地 AI 日报数据。
+- `site/data/ai-daily.json`：网站前端读取的 AI 日报数据。
+- `docs/operations/content-watch-report.md`：内容追踪报告。
+- `docs/operations/ai-daily-report.md`：AI 日报报告。
+
+## B站和抖音人工关注源
+
+B站、抖音这类平台当前先作为人工关注源维护，不做越权抓取。配置位置：
+
+```text
+data/content-watch-config.json
+```
+
+如果要加入具体 B站 UP 主，在 `manual_creators` 中找到 `platform: bilibili` 的条目，然后把账号信息追加到 `profiles`，建议字段包括：
+
+- `up_name`
+- `uid`
+- `space_url`
+- `topic_tags`
+- `last_checked_at`
+- `notes`
+
+后续如果你提供合法 API、RSS、导出 JSON/CSV 或用户授权数据，再把人工源升级为自动采集源。
+
 ## 下一步建议
 
 1. 每次更新资源前先改 `data/resources.json`
 2. 运行 `npm.cmd run ops:update` 同步站点数据并生成运营简报
 3. 运行 `npm.cmd run preview` 本地预览
-4. 需要自动化时运行 `scripts/register-daily-ops-task.ps1` 注册每日任务
+4. 需要自动化时运行 `npm.cmd run ops:register-daily` 注册每日 20:00 发布任务
 5. 后面再接 RSS/API 数据源、GitHub、Cloudflare Pages、广告位和 SEO 页面

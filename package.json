@@ -10,7 +10,12 @@
     "deploy": "wrangler deploy",
     "ops:update": "node ./scripts/ops-update.js",
     "agent:resource-search": "node ./scripts/resource-search-agent.js",
-    "ops:daily": "node ./scripts/resource-search-agent.js && node ./scripts/ops-update.js && powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1"
+    "agent:content-watch": "node ./scripts/content-watch-agent.js",
+    "agent:ai-daily": "node ./scripts/ai-daily-agent.js",
+    "ops:light": "node ./scripts/content-watch-agent.js && node ./scripts/ai-daily-agent.js",
+    "ops:daily": "node ./scripts/content-watch-agent.js && node ./scripts/resource-search-agent.js && node ./scripts/ai-daily-agent.js && node ./scripts/ops-update.js && powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
+    "ops:publish": "powershell -ExecutionPolicy Bypass -File ./scripts/publish-daily-site.ps1",
+    "ops:register-daily": "powershell -ExecutionPolicy Bypass -File ./scripts/register-daily-ops-task.ps1 -At 20:00"
   },
   "devDependencies": {
     "wrangler": "^4.102.0"
