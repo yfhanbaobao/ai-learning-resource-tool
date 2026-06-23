@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-23",
+  "positioning": "从本地 AI 工作流到个人 AI 副业启动页的实战学习工具",
+  "primary_outcomes": [
+    "从 0 跑通本地 AI 工作流",
+    "用 AI 做出可交付的小项目"
+  ],
+  "planned_outcomes": [
+    "提效/副业资源包",
+    "自动运营的 AI 资源库"
+  ],
+  "first_deliverable": "先跑通本地 AI 环境，再完成 1 个 AI 副业启动页/学习资源导航页，并用检查清单验收。",
+  "primary_customer_profile": "会用一点 AI，但不知道怎么把 AI 变成一个能发布、能引流、能尝试变现的小项目的新手。",
+  "commercial_offer": {
+    "product_name": "ai学习资料大礼包",
+    "free_entry": "公众号",
+    "test_price": "2.99",
+    "currency": "CNY",
+    "contact_channels": [
+      "微信",
+      "公众号私信"
+    ],
+    "account_placeholders": {
+      "wechat_id": "待填写",
+      "official_account_name": "待填写"
+    },
+    "primary_cta": "关注公众号领取免费入口",
+    "paid_cta": "完成本地 AI 环境和副业启动页后，可用 2.99 解锁低价测试包"
+  },
+  "main_project_cases": [
+    "AI 学习资源导航页",
+    "个人 AI 副业启动页"
+  ],
+  "stage_gate": {
+    "rule": "先完成本地 AI 环境跑通和 AI 副业启动页，再推荐后续升级。",
+    "required_before_upsell": [
+      "本地 AI 环境跑通",
+      "AI 副业启动页完成"
+    ],
+    "recommended_after_completion": [
+      "内容引流模板包",
+      "资料包升级",
+      "卡点诊断/陪跑服务"
+    ],
+    "avoid_before_completion": [
+      "高压销售",
+      "复杂内容矩阵",
+      "收益承诺",
+      "高价陪跑入口"
+    ]
+  },
+  "monetization_route": [
+    "免费/低价完成第一个结果",
+    "内容账号引流",
+    "资料包/提示词包/模板售卖",
+    "陪跑/咨询服务"
+  ],
+  "operating_cadence": "每天 1-2 小时人工判断方向，自动化优先完成检索、日报、资源候选和运营简报。",
+  "content_channels": [
+    "公众号/博客沉淀教程",
+    "小红书轻量分发",
+    "B站在稳定案例后录屏"
+  ],
+  "daily_review_time": "23:00",
+  "track_targets": {
+    "local_ai_workflow": 6,
+    "vibe_project": 6,
+    "side_hustle_starter": 5,
+    "ops_automation": 4
+  }
+}

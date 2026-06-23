@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-06-23T13:44:38.530Z",
+  "config": {
+    "version": 1,
+    "updated_at": "2026-06-23",
+    "account": {
+      "official_account_name": "待填写",
+      "wechat_id": "待填写"
+    },
+    "product": {
+      "name": "ai学习资料大礼包",
+      "free_entry_keyword": "资料包",
+      "test_price": "2.99",
+      "currency": "CNY"
+    },
+    "publishing": {
+      "mode": "draft_bundle",
+      "primary_channel": "公众号",
+      "contact_channels": [
+        "微信",
+        "公众号私信"
+      ],
+      "cadence": "daily",
+      "daily_time": "23:00"
+    },
+    "content_rules": {
+      "primary_audience": "完全新手 + 会一点 AI 工具但没有副业产品的人",
+      "stage_order": [
+        "本地 AI 环境跑通",
+        "AI 副业启动页完成",
+        "内容引流",
+        "资料包升级",
+        "卡点诊断/陪跑"
+      ],
+      "do": [
+        "每篇文章只给一个主 CTA",
+        "先帮助用户完成本地环境和启动页",
+        "完成前两阶段后再推荐 2.99 低价测试包",
+        "用微信和公众号私信承接卡点"
+      ],
+      "avoid": [
+        "收益承诺",
+        "高压销售",
+        "未完成基础动作就推高价服务",
+        "虚假稀缺或夸张案例"
+      ]
+    },
+    "auto_reply_keywords": [
+      "资料包",
+      "环境",
+      "启动页",
+      "2.99",
+      "微信",
+      "卡点"
+    ]
+  },
+  "strategy": {
+    "positioning": "从本地 AI 工作流到个人 AI 副业启动页的实战学习工具",
+    "stage_gate": {
+      "rule": "先完成本地 AI 环境跑通和 AI 副业启动页，再推荐后续升级。",
+      "required_before_upsell": [
+        "本地 AI 环境跑通",
+        "AI 副业启动页完成"
+      ],
+      "recommended_after_completion": [
+        "内容引流模板包",
+        "资料包升级",
+        "卡点诊断/陪跑服务"
+      ],
+      "avoid_before_completion": [
+        "高压销售",
+        "复杂内容矩阵",
+        "收益承诺",
+        "高价陪跑入口"
+      ]
+    },
+    "commercial_offer": {
+      "product_name": "ai学习资料大礼包",
+      "free_entry": "公众号",
+      "test_price": "2.99",
+      "currency": "CNY",
+      "contact_channels": [
+        "微信",
+        "公众号私信"
+      ],
+      "account_placeholders": {
+        "wechat_id": "待填写",
+        "official_account_name": "待填写"
+      },
+      "primary_cta": "关注公众号领取免费入口",
+      "paid_cta": "完成本地 AI 环境和副业启动页后，可用 2.99 解锁低价测试包"
+    }
+  },
+  "selected_signal": {
+    "title": "Codex-maxxing for long-running work",
+    "href": "https://openai.com/index/codex-maxxing-long-running-work",
+    "score": 13
+  },
+  "draft_path": "D:\\AI SPACE\\ai-learning-resource-tool\\docs\\content\\wechat\\2026-06-23-ai-side-hustle-starter-wechat-draft.md",
+  "replies_path": "D:\\AI SPACE\\ai-learning-resource-tool\\docs\\content\\wechat\\2026-06-23-wechat-auto-replies.json",
+  "calendar": [
+    {
+      "day": 1,
+      "title": "Windows 新手如何用 7 天做出第一个 AI 副业启动页",
+      "cta": "公众号回复“资料包”，领取 ai学习资料大礼包 免费入口"
+    },
+    {
+      "day": 2,
+      "title": "本地 AI 环境跑不通？先检查这 4 条命令",
+      "cta": "回复“环境”，拿检查顺序"
+    },
+    {
+      "day": 3,
+      "title": "别先做大项目，先做一个能发布的小页面",
+      "cta": "回复“启动页”，拿页面结构"
+    },
+    {
+      "day": 4,
+      "title": "我为什么把 AI 副业第一步定成启动页",
+      "cta": "回复“资料包”，拿免费入口"
+    },
+    {
+      "day": 5,
+      "title": "AI 启动页最容易写错的 5 个承诺",
+      "cta": "回复“卡点”，描述你的页面问题"
+    },
+    {
+      "day": 6,
+      "title": "2.99 元测试包适合谁，不适合谁",
+      "cta": "先完成环境和启动页，再考虑低价包"
+    },
+    {
+      "day": 7,
+      "title": "一周复盘：从本地 AI 到第一个可发布页面",
+      "cta": "回复“微信”，获取进一步沟通方式"
+    }
+  ]
+}

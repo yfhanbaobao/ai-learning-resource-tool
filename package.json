@@ -5,17 +5,22 @@
   "description": "AI learning resource hub workspace for Windows + Ollama + Vibe Coding.",
   "scripts": {
     "check:env": "powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
+    "smoke:deploy": "node ./scripts/deploy-smoke-test.js",
     "preview": "wrangler dev",
     "preview:8080": "powershell -ExecutionPolicy Bypass -File ./scripts/start-preview.ps1 -Port 8080",
+    "predeploy": "npm run smoke:deploy",
     "deploy": "wrangler deploy",
     "ops:update": "node ./scripts/ops-update.js",
     "agent:resource-search": "node ./scripts/resource-search-agent.js",
     "agent:content-watch": "node ./scripts/content-watch-agent.js",
     "agent:ai-daily": "node ./scripts/ai-daily-agent.js",
+    "agent:growth-ops": "node ./scripts/growth-ops-agent.js",
+    "agent:wechat-ops": "node ./scripts/wechat-ops-agent.js",
     "ops:light": "node ./scripts/content-watch-agent.js && node ./scripts/ai-daily-agent.js",
-    "ops:daily": "node ./scripts/content-watch-agent.js && node ./scripts/resource-search-agent.js && node ./scripts/ai-daily-agent.js && node ./scripts/ops-update.js && powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
+    "ops:growth-daily": "node ./scripts/content-watch-agent.js && node ./scripts/resource-search-agent.js && node ./scripts/ai-daily-agent.js && node ./scripts/growth-ops-agent.js && node ./scripts/wechat-ops-agent.js && node ./scripts/ops-update.js",
+    "ops:daily": "node ./scripts/content-watch-agent.js && node ./scripts/resource-search-agent.js && node ./scripts/ai-daily-agent.js && node ./scripts/growth-ops-agent.js && node ./scripts/wechat-ops-agent.js && node ./scripts/ops-update.js && powershell -ExecutionPolicy Bypass -File ./scripts/check-env.ps1",
     "ops:publish": "powershell -ExecutionPolicy Bypass -File ./scripts/publish-daily-site.ps1",
-    "ops:register-daily": "powershell -ExecutionPolicy Bypass -File ./scripts/register-daily-ops-task.ps1 -At 20:00"
+    "ops:register-daily": "powershell -ExecutionPolicy Bypass -File ./scripts/register-daily-ops-task.ps1 -At 23:00"
   },
   "devDependencies": {
     "wrangler": "^4.102.0"
