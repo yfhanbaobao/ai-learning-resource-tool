@@ -33,7 +33,7 @@ ollama --version
 
 ```powershell
 ollama list
-ollama pull qwen2.5:7b
+ollama pull qwen2.5:1.5b-instruct-q4_K_M
 ```
 
 这一阶段的目标不是研究所有模型，而是确认你能在自己的电脑上稳定使用 AI，并且能让 AI 帮你写页面、改文案、排错。
@@ -95,7 +95,7 @@ ai学习资料大礼包 的低价测试包会补这些内容：
 
 公众号名称：憨憨的学习空间
 
-微信号：lyfdengtianhei
+微信号：hanbaobao_-1998
 
 ## 结尾
 

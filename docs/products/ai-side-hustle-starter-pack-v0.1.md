@@ -17,7 +17,7 @@
 | 低价测试价 | 2.99 元 |
 | 用户联系 | 微信 + 公众号私信 |
 | 公众号名称 | 憨憨的学习空间 |
-| 微信号 | lyfdengtianhei |
+| 微信号 | hanbaobao_-1998 |
 | 收款方式 | 微信支付 |
 | 收款码 | `site/assets/payments/wechat-pay-2.99.jpg` |
 
@@ -26,7 +26,7 @@
 ```text
 关注公众号“憨憨的学习空间”，领取 ai学习资料大礼包免费入口。
 完成本地 AI 环境和 AI 副业启动页后，可用 2.99 元解锁低价测试包。
-遇到环境、页面、上线或资料包设计卡点，可添加微信 lyfdengtianhei，或通过公众号私信联系。
+遇到环境、页面、上线或资料包设计卡点，可添加微信 hanbaobao_-1998，或通过公众号私信联系。
 ```
 
 收款码：
@@ -111,7 +111,7 @@ ollama --version
 补充推荐：
 
 ```powershell
-ollama pull qwen2.5:7b
+ollama pull qwen2.5:1.5b-instruct-q4_K_M
 ollama list
 ```
 

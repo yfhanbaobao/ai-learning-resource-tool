@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-23T14:53:23.199Z",
+  "generated_at": "2026-06-23T15:33:16.542Z",
   "config": {
     "version": 1,
     "updated_at": "2026-06-23",
     "account": {
       "official_account_name": "憨憨的学习空间",
-      "wechat_id": "lyfdengtianhei"
+      "wechat_id": "hanbaobao_-1998"
     },
     "product": {
       "name": "ai学习资料大礼包",
@@ -88,7 +88,7 @@
         "公众号私信"
       ],
       "account_placeholders": {
-        "wechat_id": "lyfdengtianhei",
+        "wechat_id": "hanbaobao_-1998",
         "official_account_name": "憨憨的学习空间"
       },
       "payment": {
