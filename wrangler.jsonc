@@ -6,6 +6,10 @@
   "observability": {
     "enabled": true
   },
+  "vars": {
+    "WECHAT_OFFICIAL_ACCOUNT_NAME": "憨憨的学习空间",
+    "WECHAT_CONTACT_WECHAT_ID": "hanbaobao_-1998"
+  },
   "assets": {
     "directory": "site",
     "binding": "ASSETS",

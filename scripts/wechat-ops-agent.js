@@ -346,6 +346,7 @@ function main() {
 
   writeFile(draftPath, article);
   writeJson(repliesPath, replies);
+  writeJson(path.join(siteDataDir, 'wechat-auto-replies.json'), replies);
   writeJson(path.join(dataDir, 'wechat-ops-plan.json'), plan);
   writeJson(path.join(siteDataDir, 'wechat-ops-plan.json'), plan);
   writeFile(path.join(opsDir, 'wechat-ops-report.md'), buildReport(plan, draftPath, repliesPath));
