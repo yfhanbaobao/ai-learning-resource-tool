@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T12:07:22.662Z",
+  "generated_at": "2026-06-23T12:37:16.283Z",
   "items": [
     {
       "id": "ollama-windows-fix",
@@ -17,12 +17,13 @@
       "id": "ollama-cursor-link",
       "title": "Ollama 对接 Cursor / VS Code 思路",
       "category": "Ollama教程",
-      "summary": "整理本地模型如何给编辑器或代码工作流提供补全、问答和代码解释。",
-      "href": "https://github.com",
+      "summary": "对接 Ollama 与 VS Code 的官方入口，适合整理本地模型在编辑器里的补全、问答和代码解释工作流。",
+      "href": "https://docs.ollama.com/integrations/vscode",
       "tags": [
         "ollama",
-        "编辑器",
-        "vibe-coding"
+        "vscode",
+        "本地模型",
+        "编辑器"
       ]
     },
     {
@@ -44,10 +45,11 @@
       "id": "qwen-model-guide",
       "title": "Qwen 系列模型入门",
       "category": "Qwen/DeepSeek代码模型",
-      "summary": "适合介绍模型定位、参数大小选择、日常问答与代码场景区别。",
-      "href": "https://www.modelscope.cn",
+      "summary": "Qwen2.5 官方系列介绍，适合学习模型定位、参数规模、代码能力和本地/云端选型差异。",
+      "href": "https://qwenlm.github.io/blog/qwen2.5/",
       "tags": [
         "qwen",
+        "qwen2.5",
         "模型对比",
         "代码"
       ]
@@ -56,11 +58,12 @@
       "id": "deepseek-coder-notes",
       "title": "DeepSeek 代码模型整理页",
       "category": "Qwen/DeepSeek代码模型",
-      "summary": "可汇总写代码、改 Bug、解释报错、重构脚本等常用玩法。",
-      "href": "https://huggingface.co",
+      "summary": "DeepSeek Coder 官方项目页，适合整理代码生成、Bug 修复、报错解释和脚本重构等开发场景。",
+      "href": "https://deepseekcoder.github.io/",
       "tags": [
         "deepseek",
-        "代码",
+        "代码模型",
+        "本地开发",
         "提示词"
       ]
     },
@@ -104,11 +107,12 @@
       "id": "free-model-sites",
       "title": "免费大模型网站合集",
       "category": "免费大模型网站",
-      "summary": "适合放官方站、模型社区、镜像站、开源工具官网等入口。",
+      "summary": "以 Hugging Face 为代表的公开模型社区入口，适合查找模型卡、数据集、Demo 和开源工具。",
       "href": "https://huggingface.co",
       "tags": [
         "免费",
-        "模型",
+        "模型社区",
+        "huggingface",
         "工具"
       ]
     },
@@ -116,12 +120,13 @@
       "id": "automation-cases",
       "title": "自动化脚本案例页",
       "category": "自动化脚本案例",
-      "summary": "适合汇总文件整理、批量重命名、网页抓取、日报生成等脚本案例。",
-      "href": "https://github.com",
+      "summary": "可从自动化脚本主题中筛选文件整理、批量重命名、网页抓取和日报生成等新手练习案例。",
+      "href": "https://github.com/topics/automation-scripts",
       "tags": [
         "自动化",
         "脚本",
-        "案例"
+        "案例",
+        "github"
       ]
     },
     {
@@ -140,88 +145,145 @@
       "id": "candidate-2941d647d4edde",
       "title": "Ever Tried the Vibe Coding Prompt Template?",
       "category": "提示词库",
-      "summary": "Hacker News discussion signal. Points: 6. Comments: 1.",
+      "summary": "TinyToolStack 的 Vibe Coding prompt generator，经 HN 讨论发现；适合作为快速生成提示词的轻量工具入口。",
       "href": "https://tinytoolstack.com/app/vibecodingpromptgenerator",
       "tags": [
-        "hacker-news",
-        "auto-discovered"
+        "prompt",
+        "vibe-coding",
+        "tool"
       ]
     },
     {
       "id": "candidate-1fad44df9457c5",
       "title": "Show HN: I built a systematic workflow for 'vibe coding'",
       "category": "提示词库",
-      "summary": "Hacker News discussion signal. Points: 2. Comments: 0.",
+      "summary": "用于 AI IDE 的 vibe coding 工作流模板，覆盖 PRD、技术设计、MVP 等从想法到实现的文档与提示词步骤。",
       "href": "https://github.com/KhazP/vibe-coding-prompt-template",
       "tags": [
-        "hacker-news",
-        "auto-discovered"
+        "prompt",
+        "vibe-coding",
+        "workflow",
+        "ai-ide"
       ]
     },
     {
       "id": "candidate-0c3e8c35570b66",
       "title": "frank9306/vibe-coding-guide",
       "category": "提示词库",
-      "summary": "This repository is a curated collection of personal insights, prompt templates, agent workflows, and practical tips gathered from across the web to master the art of **vibe coding**—building software seamlessly with the ",
+      "summary": "汇总 vibe coding 个人实践、提示词模板、智能体工作流和实用技巧，适合作为 AI 编程方法参考。",
       "href": "https://github.com/frank9306/vibe-coding-guide",
       "tags": [
-        "github",
-        "auto-discovered"
-      ]
-    },
-    {
-      "id": "candidate-68e16a278cb6d9",
-      "title": "Flyingmiata-droid/vibe-coding-prompt-template-jane",
-      "category": "提示词库",
-      "summary": "GitHub repository for Flyingmiata-droid/vibe-coding-prompt-template-jane",
-      "href": "https://github.com/Flyingmiata-droid/vibe-coding-prompt-template-jane",
-      "tags": [
-        "github",
-        "auto-discovered"
+        "prompt",
+        "vibe-coding",
+        "agent-workflow",
+        "guide"
       ]
     },
     {
       "id": "candidate-a588a1eb31f8ea",
       "title": "syedrasimali/Prompt2App-startup-build-mvp",
       "category": "提示词库",
-      "summary": "Prompt2App is a full-stack AI vibe coding platform that converts text prompts into complete React apps using Google Gemini AI. It includes a Monaco editor, live preview, Firebase auth, project saving, templates, and a mo",
+      "summary": "Prompt2App 示例项目，可把文本提示转换为 React 应用，包含编辑器、预览、认证、项目保存和模板能力。",
       "href": "https://github.com/syedrasimali/Prompt2App-startup-build-mvp",
       "tags": [
-        "github",
-        "auto-discovered"
+        "prompt-to-app",
+        "react",
+        "vibe-coding",
+        "mvp"
       ]
     },
     {
       "id": "candidate-ab421dcee3c862",
       "title": "lihaimin0821/vibe-coding-prompt-template-cn",
       "category": "提示词库",
-      "summary": "vibe-coding提示词模板汉化",
+      "summary": "vibe-coding 提示词模板的中文汉化仓库，适合中文学习者参考 AI 编程提示词结构。",
       "href": "https://github.com/lihaimin0821/vibe-coding-prompt-template-cn",
       "tags": [
-        "github",
-        "auto-discovered"
+        "prompt",
+        "vibe-coding",
+        "中文",
+        "模板"
       ]
     },
     {
       "id": "candidate-60a649ae5bb7c0",
       "title": "robertpreshyl/ai-test-ping-pong-game",
       "category": "Qwen/DeepSeek代码模型",
-      "summary": "A simple 2-player ping pong game built to test DeepSeek-R1:14B LLM capabilities on macOS with Continue.dev on VS Code. Features Pygame integration and local AI development workflows.",
+      "summary": "使用 DeepSeek-R1、Continue.dev 与 VS Code 测试本地 AI 开发流程的小游戏示例，可作为代码模型练习案例。",
       "href": "https://github.com/robertpreshyl/ai-test-ping-pong-game",
       "tags": [
-        "github",
-        "auto-discovered"
+        "deepseek",
+        "continue.dev",
+        "vscode",
+        "本地开发"
       ]
     },
     {
       "id": "candidate-73850bb8858174",
       "title": "Kohnnn/deepseek-n8n-automate-workflow",
-      "category": "Qwen/DeepSeek代码模型",
-      "summary": "Self-hosted AI Starter Kit is an open, docker compose template that quickly bootstraps a fully featured Local AI and Low Code development environment including Open WebUI for an interface to chat with your N8N agents. No",
+      "category": "自动化脚本案例",
+      "summary": "面向 DeepSeek-R1、Open WebUI 和 n8n 的本地低代码自动化环境模板，适合学习自托管 AI 工作流。",
       "href": "https://github.com/Kohnnn/deepseek-n8n-automate-workflow",
       "tags": [
-        "github",
-        "auto-discovered"
+        "deepseek",
+        "n8n",
+        "automation",
+        "self-hosted"
+      ]
+    },
+    {
+      "id": "candidate-761738a11cbe0a",
+      "title": "adambar88/VibeCoding",
+      "category": "提示词库",
+      "summary": "面向 GitHub Copilot Agent mode 的 Vibe Coding 模板，包含 12 个 AI agents、自主 SDLC、提示词和操作说明。",
+      "href": "https://github.com/adambar88/VibeCoding",
+      "tags": [
+        "prompt",
+        "vibe-coding",
+        "agents",
+        "github-copilot"
+      ]
+    },
+    {
+      "id": "openai-codex-long-running-work",
+      "title": "Codex 长任务工作流：保留上下文并持续推进",
+      "category": "Codex工作流",
+      "summary": "OpenAI 官方案例，讲 Jason Liu 如何用 Codex 管理复杂项目、保留上下文，并把一次提示词之外的长期工作拆成可继续执行的流程。",
+      "href": "https://openai.com/index/codex-maxxing-long-running-work",
+      "tags": [
+        "codex",
+        "workflow",
+        "long-running",
+        "context",
+        "learning-card"
+      ]
+    },
+    {
+      "id": "openai-academy-ai-at-work",
+      "title": "OpenAI Academy：把 AI 用到日常工作",
+      "category": "AI工作流课程",
+      "summary": "OpenAI Academy 新课程入口，适合把 AI 技能、可重复工作流和 agent 日常应用整理成一周实操训练计划。",
+      "href": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "tags": [
+        "openai-academy",
+        "course",
+        "workflow",
+        "agents",
+        "practical-ai"
+      ]
+    },
+    {
+      "id": "openai-daybreak-codex-security",
+      "title": "Daybreak：Codex Security 安全自动化路径",
+      "category": "AI安全自动化",
+      "summary": "OpenAI Daybreak 安全工具发布，适合作为进阶学习资源：理解 AI 如何发现、验证并修复漏洞，把安全扫描做成可复用流程。",
+      "href": "https://openai.com/index/daybreak-securing-the-world",
+      "tags": [
+        "codex-security",
+        "security",
+        "automation",
+        "vulnerability",
+        "open-source"
       ]
     }
   ]

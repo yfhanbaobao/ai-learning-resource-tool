@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T12:07:19.541Z",
+  "generated_at": "2026-06-23T12:37:12.899Z",
   "title": "AI 日报 2026-06-23",
   "summary": "今日筛选 7 条 AI 学习/自动化相关信号，来源于公开 allowlist 信源和本地候选资源池。",
   "selected": [
@@ -30,7 +30,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 13
+      "daily_score": 13,
+      "next_action": "Turn the strongest practical lesson into a reusable learning card."
     },
     {
       "id": "watch-dd73139d2e3dcd",
@@ -59,7 +60,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 13
+      "daily_score": 13,
+      "next_action": "Turn the strongest practical lesson into a reusable learning card."
     },
     {
       "id": "watch-b63e5cb33bb0ec",
@@ -88,7 +90,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 12
+      "daily_score": 12,
+      "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
     },
     {
       "id": "watch-3696e67c2c9e8a",
@@ -117,7 +120,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 12
+      "daily_score": 12,
+      "next_action": "Review the security angle and decide whether it belongs in the automation/security learning path."
     },
     {
       "id": "watch-4a975b89e4a0f0",
@@ -146,7 +150,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 12
+      "daily_score": 12,
+      "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
     },
     {
       "id": "watch-0fda1a1b5a24b7",
@@ -175,7 +180,8 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 12
+      "daily_score": 12,
+      "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
     },
     {
       "id": "watch-480508a9ca16ad",
@@ -204,10 +210,11 @@
         "date_traceable": true,
         "not_duplicate": true
       },
-      "daily_score": 11
+      "daily_score": 11,
+      "next_action": "Capture the adoption pattern as a short case-study note."
     }
   ],
-  "evaluated_count": 25,
+  "evaluated_count": 17,
   "rules": [
     "14 天时效",
     "HTTPS 来源可信",
