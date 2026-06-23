@@ -2,7 +2,7 @@
 
 - 日期：2026-06-23
 - 新增候选内容：0
-- 错误数：1
+- 错误数：0
 
 ## 优先级
 
@@ -38,7 +38,11 @@
 
 ## 错误
 
-- huggingface_blog: fetch failed
+- 无。
+
+## Warnings
+
+- huggingface_blog: unavailable (https://huggingface.co/blog/feed.xml: fetch failed (UND_ERR_CONNECT_TIMEOUT); https://hf.co/blog/feed.xml: This operation was aborted); skipped optional source
 
 ## 安全边界
 

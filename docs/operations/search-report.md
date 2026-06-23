@@ -2,7 +2,7 @@
 
 - 生成日期：2026-06-23
 - 新候选资源：0
-- 错误数：0
+- 错误数：6
 
 ## 新候选资源
 
@@ -10,7 +10,12 @@
 
 ## 错误
 
-- 无
+- github_repositories/Vibe Coding prompt template: 403 rate limit exceeded
+- github_repositories/AI automation script examples beginners: 403 rate limit exceeded
+- github_repositories/Cloudflare Pages static site tutorial AI tools: 403 rate limit exceeded
+- github_repositories/AI side hustle starter landing page template: 403 rate limit exceeded
+- github_repositories/AI prompt pack template side project: 403 rate limit exceeded
+- github_repositories/AI productivity monetization template: 403 rate limit exceeded
 
 ## 安全策略
 
