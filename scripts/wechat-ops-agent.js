@@ -31,6 +31,16 @@ function clean(value, limit = 240) {
     .slice(0, limit);
 }
 
+function toMarkdownPath(filePath) {
+  return filePath.split(path.sep).join('/');
+}
+
+function relativeMarkdownPath(fromFilePath, targetPath) {
+  const absoluteTargetPath = path.resolve(root, targetPath);
+  const relativePath = path.relative(path.dirname(fromFilePath), absoluteTargetPath);
+  return toMarkdownPath(relativePath);
+}
+
 function firstUsefulSignal(daily) {
   const selected = Array.isArray(daily.selected) ? daily.selected : [];
   return selected.find((item) => /learning|course|prompt|workflow|codex|automation|vibe|agent/i.test(`${item.title || ''} ${item.summary || ''} ${(item.tags || []).join(' ')}`))
@@ -46,13 +56,18 @@ function buildTitle(plan) {
   return '从 0 跑通本地 AI，并做出一个能发布的小页面';
 }
 
-function buildArticle({ config, strategy, plan, signal }) {
+function buildArticle({ config, strategy, plan, signal, draftPath }) {
   const product = config.product || {};
   const account = config.account || {};
   const title = buildTitle(plan);
   const keyword = product.free_entry_keyword || '资料包';
   const productName = product.name || 'ai学习资料大礼包';
   const price = product.test_price || '2.99';
+  const paymentMethod = product.payment_method || '微信支付';
+  const paymentQrPath = product.payment_qr_local_path || product.payment_qr_path || '';
+  const articlePaymentQrPath = paymentQrPath && draftPath
+    ? relativeMarkdownPath(draftPath, paymentQrPath)
+    : paymentQrPath;
   const officialAccountName = account.official_account_name || '待填写';
   const wechatId = account.wechat_id || '待填写';
   const signalLine = signal
@@ -64,7 +79,7 @@ function buildArticle({ config, strategy, plan, signal }) {
 > 公众号草稿日期：${stamp}
 > 资料包：${productName}
 > 免费入口：公众号回复“${keyword}”
-> 低价测试包：${price} 元
+> 低价测试包：${price} 元（${paymentMethod}）
 
 ## 开头
 
@@ -138,9 +153,13 @@ ${productName} 的低价测试包会补这些内容：
 - 常见报错修复提示词
 - 公众号/小红书/B站内容模板
 
+付款方式：
+
+${articlePaymentQrPath ? `![${paymentMethod}收款码](${articlePaymentQrPath})` : `请使用${paymentMethod}完成 ${price} 元付款。`}
+
 ## 领取方式
 
-关注公众号，回复：
+关注公众号 **${officialAccountName}**，回复：
 
 \`\`\`text
 ${keyword}
@@ -150,9 +169,9 @@ ${keyword}
 
 如果你已经完成本地 AI 环境和启动页，但卡在页面上线、内容发布或资料包设计，可以通过微信或公众号私信联系我。
 
-当前公众号名称：${officialAccountName}
+公众号名称：${officialAccountName}
 
-当前微信号：${wechatId}
+微信号：${wechatId}
 
 ## 结尾
 
@@ -168,14 +187,17 @@ function buildAutoReplies(config) {
   const productName = product.name || 'ai学习资料大礼包';
   const keyword = product.free_entry_keyword || '资料包';
   const price = product.test_price || '2.99';
+  const paymentMethod = product.payment_method || '微信支付';
+  const paymentQrPath = product.payment_qr_local_path || product.payment_qr_path || '';
   const wechatId = account.wechat_id || '待填写';
+  const officialAccountName = account.official_account_name || '待填写';
 
   return {
     generated_at: new Date().toISOString(),
     replies: [
       {
         keyword,
-        reply: `已收到。你可以先按顺序完成两步：1）跑通本地 AI 环境；2）做出 AI 副业启动页。完成后再考虑 ${price} 元低价测试包。`
+        reply: `已收到。你可以先按顺序完成两步：1）跑通本地 AI 环境；2）做出 AI 副业启动页。完成后再考虑 ${price} 元低价测试包。公众号：${officialAccountName}。`
       },
       {
         keyword: '环境',
@@ -187,11 +209,15 @@ function buildAutoReplies(config) {
       },
       {
         keyword: price,
-        reply: `${productName} 低价测试包是 ${price} 元。建议你先完成本地环境和启动页，再购买升级内容，这样最不浪费。`
+        reply: `${productName} 低价测试包是 ${price} 元，收款方式为${paymentMethod}。建议你先完成本地环境和启动页，再购买升级内容，这样最不浪费。可在文章内扫码，或私信“付款”获取收款码。`
       },
       {
         keyword: '微信',
-        reply: `可以加微信沟通：${wechatId}。如果微信号还没公开，请先通过公众号私信说明你的卡点。`
+        reply: `可以加微信沟通：${wechatId}，也可以直接在公众号“${officialAccountName}”私信说明你的卡点。`
+      },
+      {
+        keyword: '付款',
+        reply: `${productName} 低价测试包为 ${price} 元，使用${paymentMethod}。付款后请通过公众号私信或微信 ${wechatId} 发送付款截图和你的当前阶段。`
       },
       {
         keyword: '卡点',
@@ -245,6 +271,7 @@ function buildCalendar(config) {
 function buildReport(plan, draftPath, repliesPath) {
   const offer = plan.config.product || {};
   const account = plan.config.account || {};
+  const paymentQrPath = offer.payment_qr_local_path || offer.payment_qr_path || '';
   const lines = [];
   lines.push('# 公众号运营智能体报告');
   lines.push('');
@@ -252,6 +279,8 @@ function buildReport(plan, draftPath, repliesPath) {
   lines.push(`- 资料包：${offer.name}`);
   lines.push(`- 免费入口：公众号回复“${offer.free_entry_keyword}”`);
   lines.push(`- 低价测试价：${offer.test_price} 元`);
+  lines.push(`- 收款方式：${offer.payment_method || '微信支付'}`);
+  lines.push(`- 收款码：${paymentQrPath || '未配置'}`);
   lines.push(`- 联系方式：微信 + 公众号私信`);
   lines.push(`- 公众号名称：${account.official_account_name}`);
   lines.push(`- 微信号：${account.wechat_id}`);
@@ -270,11 +299,13 @@ function buildReport(plan, draftPath, repliesPath) {
   lines.push('');
   lines.push('## 发布前检查');
   lines.push('');
-  lines.push('- [ ] 填写真实公众号名称');
-  lines.push('- [ ] 填写真实微信号或二维码');
-  lines.push('- [ ] 确认 2.99 元收款方式');
+  lines.push('- [x] 填写真实公众号名称');
+  lines.push('- [x] 填写真实微信号');
+  lines.push('- [x] 确认 2.99 元收款方式');
+  lines.push('- [x] 保存微信支付收款码到站点资源目录');
   lines.push('- [ ] 把文章草稿复制到公众号后台');
-  lines.push('- [ ] 配置关键词自动回复：资料包、环境、启动页、2.99、微信、卡点');
+  lines.push(`- [ ] 把收款码图片上传到公众号正文或素材库：${paymentQrPath || '未配置'}`);
+  lines.push('- [ ] 配置关键词自动回复：资料包、环境、启动页、2.99、付款、微信、卡点');
   lines.push('- [ ] 发布后记录阅读、关注、私信、领取、付费信号');
   lines.push('');
   lines.push('## 边界');
@@ -290,12 +321,11 @@ function main() {
   const growthPlan = readJson(path.join(dataDir, 'growth-plan.json'), {});
   const daily = readJson(path.join(dataDir, 'ai-daily.json'), { selected: [] });
   const signal = firstUsefulSignal(daily);
-  const article = buildArticle({ config, strategy, plan: growthPlan, signal });
-  const replies = buildAutoReplies(config);
-  const calendar = buildCalendar(config);
-
   const draftPath = path.join(contentDir, `${stamp}-ai-side-hustle-starter-wechat-draft.md`);
   const repliesPath = path.join(contentDir, `${stamp}-wechat-auto-replies.json`);
+  const article = buildArticle({ config, strategy, plan: growthPlan, signal, draftPath });
+  const replies = buildAutoReplies(config);
+  const calendar = buildCalendar(config);
   const plan = {
     generated_at: new Date().toISOString(),
     config,

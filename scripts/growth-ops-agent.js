@@ -238,7 +238,7 @@ function buildMarkdown(plan) {
     lines.push(`- 主 CTA：${offer.primary_cta}`);
     lines.push(`- 付费 CTA：${offer.paid_cta}`);
     if (offer.account_placeholders) {
-      lines.push(`- 待补账号：公众号名称=${offer.account_placeholders.official_account_name}；微信号=${offer.account_placeholders.wechat_id}`);
+      lines.push(`- 账号：公众号名称=${offer.account_placeholders.official_account_name}；微信号=${offer.account_placeholders.wechat_id}`);
     }
     lines.push('');
   }

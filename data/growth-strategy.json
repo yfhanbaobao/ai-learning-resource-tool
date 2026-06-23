@@ -22,8 +22,13 @@
       "公众号私信"
     ],
     "account_placeholders": {
-      "wechat_id": "待填写",
-      "official_account_name": "待填写"
+      "wechat_id": "lyfdengtianhei",
+      "official_account_name": "憨憨的学习空间"
+    },
+    "payment": {
+      "method": "微信支付",
+      "qr_path": "./assets/payments/wechat-pay-2.99.jpg",
+      "qr_local_path": "site/assets/payments/wechat-pay-2.99.jpg"
     },
     "primary_cta": "关注公众号领取免费入口",
     "paid_cta": "完成本地 AI 环境和副业启动页后，可用 2.99 解锁低价测试包"
