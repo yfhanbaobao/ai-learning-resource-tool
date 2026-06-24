@@ -10,7 +10,7 @@
       "category": "Ollama教程",
       "summary": "适合首页首批内容：安装、启动失败、端口占用、模型拉取慢、环境变量等常见问题。",
       "href": "https://ollama.com",
-      "copyText": "ollama --version\nollama list\nollama pull qwen2.5:7b",
+      "copyText": "ollama --version\nollama list\nollama pull qwen2.5:1.5b-instruct-q4_K_M",
       "status": "active",
       "priority": "high",
       "tags": [
@@ -41,7 +41,7 @@
       "category": "Ollama教程",
       "summary": "面向 Windows 本地模型新手，把 Ollama 本地模型、Codex 代码执行、本地智能体、AI 学习资源站和可选云端强模型串成一套真实可跑的开发与运营闭环。",
       "href": "https://ollama.com",
-      "copyText": "# 1. 检查本地 Ollama 模型\nollama list\nollama pull qwen2.5:7b\nollama pull qwen2.5-coder:7b\n\n# 2. 启动本地智能体控制台\ncd \"D:\\\\AI SPACE\\\\auto-creater\"\npython -m pipeline.webapp --host 127.0.0.1 --port 8765\n\n# 3. 更新 AI 学习资源站数据\ncd \"D:\\\\AI SPACE\\\\ai-learning-resource-tool\"\nnpm.cmd run ops:update\n\n# 4. 交给 Codex / 主控 AI 的提示词\n你是我的本地开发总控。请先判断任务适合本地 Ollama、Codex 执行、还是云端强模型；然后输出任务拆解、要调用的本地智能体、需要更新的文件、验证命令、部署步骤和回滚风险。默认优先保护本地隐私与密钥，不要把 API Key 写入代码或日志.",
+      "copyText": "# 1. 检查本地 Ollama 模型\nollama list\nollama pull qwen2.5:1.5b-instruct-q4_K_M\nollama pull qwen2.5-coder:1.5b-instruct-q4_K_M\nollama pull deepseek-r1:1.5b-qwen-distill-q4_K_M\n\n# 2. 启动本地智能体控制台\ncd \"D:\\\\AI SPACE\\\\auto-creater\"\npython -m pipeline.webapp --host 127.0.0.1 --port 8765\n\n# 3. 更新 AI 学习资源站数据\ncd \"D:\\\\AI SPACE\\\\ai-learning-resource-tool\"\nnpm.cmd run ops:update\n\n# 4. 交给 Codex / 主控 AI 的提示词\n你是我的本地开发总控。请先判断任务适合本地 Ollama、Codex 执行、还是云端强模型；然后输出任务拆解、要调用的本地智能体、需要更新的文件、验证命令、部署步骤和回滚风险。默认优先保护本地隐私与密钥，不要把 API Key 写入代码或日志.",
       "status": "active",
       "priority": "high",
       "tags": [
@@ -383,5 +383,157 @@
       "source_query": "Vibe Coding prompt template",
       "score": 4
     }
-  ]
+  ],
+  "candidate_discovery": {
+    "generated_at": "2026-06-24T15:00:52.168Z",
+    "attempted": 18,
+    "completed": 11,
+    "partial_coverage": true,
+    "rate_limited": 7,
+    "failed": 0,
+    "no_results": 9,
+    "by_status": {
+      "no_results": 9,
+      "ok": 2,
+      "rate_limited": 7
+    },
+    "details": [
+      {
+        "source_id": "github_repositories",
+        "query": "Ollama Windows tutorial local LLM",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "Ollama Windows tutorial local LLM",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "Qwen coder local model tutorial",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "Qwen coder local model tutorial",
+        "status": "ok",
+        "result_count": 1
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "DeepSeek coder local development workflow",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "DeepSeek coder local development workflow",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "Vibe Coding prompt template",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "Vibe Coding prompt template",
+        "status": "ok",
+        "result_count": 4
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "AI automation script examples beginners",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "AI automation script examples beginners",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "Cloudflare Pages static site tutorial AI tools",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "Cloudflare Pages static site tutorial AI tools",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "AI side hustle starter landing page template",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "AI side hustle starter landing page template",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "AI prompt pack template side project",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "AI prompt pack template side project",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_repositories",
+        "query": "AI productivity monetization template",
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-24T15:01:09.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-24T15:01:09.000Z"
+      },
+      {
+        "source_id": "hacker_news",
+        "query": "AI productivity monetization template",
+        "status": "no_results",
+        "result_count": 0
+      }
+    ]
+  }
 }

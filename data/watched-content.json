@@ -1,7 +1,64 @@
 {
   "version": 1,
-  "generated_at": "2026-06-23T15:00:38.446Z",
+  "generated_at": "2026-06-24T15:00:39.953Z",
   "items": [
+    {
+      "id": "watch-855db08b75f6ec",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "href": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+      "published_at": "2026-06-24T06:00:00.000Z",
+      "discovered_at": "2026-06-24T15:00:09.655Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    },
+    {
+      "id": "watch-072c0c39733799",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "href": "https://openai.com/index/gpt-5-immunology-mystery",
+      "summary": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research.",
+      "published_at": "2026-06-23T17:00:00.000Z",
+      "discovered_at": "2026-06-24T01:00:10.111Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
+    {
+      "id": "watch-aec47bf765565a",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Helping build shared standards for advanced AI",
+      "href": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation.",
+      "published_at": "2026-06-23T13:00:00.000Z",
+      "discovered_at": "2026-06-24T01:00:10.110Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
     {
       "id": "watch-e2330fefe7e289",
       "source_id": "openai_news",
@@ -306,5 +363,53 @@
       "status": "candidate",
       "score": 5
     }
-  ]
+  ],
+  "discovery_run": {
+    "generated_at": "2026-06-24T15:00:39.953Z",
+    "attempted": 6,
+    "completed": 5,
+    "partial_coverage": true,
+    "rate_limited": 0,
+    "failed": 0,
+    "warnings": 1,
+    "no_results": 4,
+    "by_status": {
+      "ok": 1,
+      "warning": 1,
+      "no_results": 4
+    },
+    "details": [
+      {
+        "source_id": "openai_news",
+        "status": "ok",
+        "result_count": 12
+      },
+      {
+        "source_id": "huggingface_blog",
+        "status": "warning",
+        "result_count": 0,
+        "message": "https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT"
+      },
+      {
+        "source_id": "github_trending_ai",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "hackernews_ai",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "github_side_hustle_templates",
+        "status": "no_results",
+        "result_count": 0
+      },
+      {
+        "source_id": "hackernews_side_projects",
+        "status": "no_results",
+        "result_count": 0
+      }
+    ]
+  }
 }
