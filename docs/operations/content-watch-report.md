@@ -1,6 +1,6 @@
 # LIGHT Content Watch Report
 
-- Date: 2026-06-24
+- Date: 2026-06-25
 - New candidates: 1
 - Coverage: partial
 - Completed sources: 5/6
@@ -11,6 +11,7 @@
 ## Coverage
 
 - Partial coverage: 5/6 sources completed; rate_limited=0; failed=0; warnings=1.
+- Item retention: kept 19/19 existing items; partial coverage retention active; configured item cap deferred until a complete run.
 - ok: openai_news results=12
 - warning: huggingface_blog results=0 - https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT
 - no_results: github_trending_ai results=0
@@ -27,8 +28,8 @@
 
 ## New Candidates
 
-- OpenAI and Broadcom unveil LLM-optimized inference chip | OpenAI News | score=5
-  - https://openai.com/index/openai-broadcom-jalapeno-inference-chip
+- How agents are transforming work | OpenAI News | score=5
+  - https://openai.com/index/how-agents-are-transforming-work
 
 ## Manual Watch Sources
 

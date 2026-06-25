@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T15:00:53.938Z",
-  "title": "AI 日报 2026-06-24",
+  "generated_at": "2026-06-25T15:15:52.472Z",
+  "title": "AI 日报 2026-06-25",
   "summary": "今日筛选 7 条 AI 学习/自动化相关信号，来源于公开 allowlist 信源和本地候选资源池。",
   "selected": [
     {
@@ -62,6 +62,36 @@
       },
       "daily_score": 13,
       "next_action": "Turn the strongest practical lesson into a reusable learning card."
+    },
+    {
+      "id": "watch-3d99cf87d464b7",
+      "title": "How agents are transforming work",
+      "href": "https://openai.com/index/how-agents-are-transforming-work",
+      "summary": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+      "category": "official",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "source_name": "OpenAI News",
+      "published_at": "2026-06-25T02:00:00.000Z",
+      "discovered_at": "2026-06-25T15:15:15.830Z",
+      "metrics": {},
+      "score": 5,
+      "origin": "watch",
+      "rules": {
+        "fresh": true,
+        "source": true,
+        "real_project": true,
+        "real_metric": true,
+        "complete": true,
+        "date_traceable": true,
+        "not_duplicate": true
+      },
+      "daily_score": 12,
+      "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
     },
     {
       "id": "watch-855db08b75f6ec",
@@ -182,39 +212,9 @@
       },
       "daily_score": 12,
       "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
-    },
-    {
-      "id": "watch-0fda1a1b5a24b7",
-      "title": "How an astrophysicist uses Codex to help simulate black holes",
-      "href": "https://openai.com/index/using-codex-to-simulate-black-holes",
-      "summary": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
-      "category": "official",
-      "tags": [
-        "official",
-        "model",
-        "ai-news",
-        "watched-content"
-      ],
-      "source_name": "OpenAI News",
-      "published_at": "2026-06-11T00:00:00.000Z",
-      "discovered_at": "2026-06-22T13:19:47.350Z",
-      "metrics": {},
-      "score": 5,
-      "origin": "watch",
-      "rules": {
-        "fresh": true,
-        "source": true,
-        "real_project": true,
-        "real_metric": true,
-        "complete": true,
-        "date_traceable": true,
-        "not_duplicate": true
-      },
-      "daily_score": 12,
-      "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
     }
   ],
-  "evaluated_count": 20,
+  "evaluated_count": 21,
   "rules": [
     "14 天时效",
     "HTTPS 来源可信",

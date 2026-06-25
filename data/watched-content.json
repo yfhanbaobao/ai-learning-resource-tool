@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "generated_at": "2026-06-24T15:00:39.953Z",
+  "generated_at": "2026-06-25T15:15:41.712Z",
   "items": [
+    {
+      "id": "watch-3d99cf87d464b7",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "How agents are transforming work",
+      "href": "https://openai.com/index/how-agents-are-transforming-work",
+      "summary": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+      "published_at": "2026-06-25T02:00:00.000Z",
+      "discovered_at": "2026-06-25T15:15:15.830Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 5
+    },
     {
       "id": "watch-855db08b75f6ec",
       "source_id": "openai_news",
@@ -365,7 +384,7 @@
     }
   ],
   "discovery_run": {
-    "generated_at": "2026-06-24T15:00:39.953Z",
+    "generated_at": "2026-06-25T15:15:41.695Z",
     "attempted": 6,
     "completed": 5,
     "partial_coverage": true,
@@ -410,6 +429,15 @@
         "status": "no_results",
         "result_count": 0
       }
-    ]
+    ],
+    "coverage_status": "partial",
+    "item_retention": {
+      "existing_items_before": 19,
+      "existing_items_retained": 19,
+      "new_items_accepted": 1,
+      "configured_max_items": 80,
+      "effective_max_items": 80,
+      "partial_coverage_retention": true
+    }
   }
 }
