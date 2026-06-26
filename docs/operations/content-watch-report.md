@@ -1,7 +1,7 @@
 # LIGHT Content Watch Report
 
-- Date: 2026-06-25
-- New candidates: 1
+- Date: 2026-06-26
+- New candidates: 0
 - Coverage: partial
 - Completed sources: 5/6
 - Rate-limited sources: 0
@@ -11,9 +11,9 @@
 ## Coverage
 
 - Partial coverage: 5/6 sources completed; rate_limited=0; failed=0; warnings=1.
-- Item retention: kept 19/19 existing items; partial coverage retention active; configured item cap deferred until a complete run.
+- Item retention: kept 20/20 existing items; partial coverage retention active; configured item cap deferred until a complete run.
 - ok: openai_news results=12
-- warning: huggingface_blog results=0 - https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT
+- warning: huggingface_blog results=0 - https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: This operation was aborted
 - no_results: github_trending_ai results=0
 - no_results: hackernews_ai results=0
 - no_results: github_side_hustle_templates results=0
@@ -28,8 +28,9 @@
 
 ## New Candidates
 
-- How agents are transforming work | OpenAI News | score=5
-  - https://openai.com/index/how-agents-are-transforming-work
+- No new accepted candidates from completed sources.
+- This is not a confirmed no-result run because content-watch coverage was partial.
+- Existing watched items are retained; item trimming waits for complete coverage.
 
 ## Manual Watch Sources
 
@@ -48,7 +49,7 @@
 
 ## Warnings
 
-- huggingface_blog: unavailable (https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT); skipped optional source
+- huggingface_blog: unavailable (https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: This operation was aborted); skipped optional source
 
 ## Errors
 

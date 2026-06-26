@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T15:15:52.472Z",
-  "title": "AI 日报 2026-06-25",
+  "generated_at": "2026-06-26T15:00:53.337Z",
+  "title": "AI 日报 2026-06-26",
   "summary": "今日筛选 7 条 AI 学习/自动化相关信号，来源于公开 allowlist 信源和本地候选资源池。",
   "selected": [
     {
@@ -18,36 +18,6 @@
       "source_name": "OpenAI News",
       "published_at": "2026-06-22T00:00:00.000Z",
       "discovered_at": "2026-06-23T12:05:17.082Z",
-      "metrics": {},
-      "score": 6,
-      "origin": "watch",
-      "rules": {
-        "fresh": true,
-        "source": true,
-        "real_project": true,
-        "real_metric": true,
-        "complete": true,
-        "date_traceable": true,
-        "not_duplicate": true
-      },
-      "daily_score": 13,
-      "next_action": "Turn the strongest practical lesson into a reusable learning card."
-    },
-    {
-      "id": "watch-dd73139d2e3dcd",
-      "title": "New OpenAI Academy courses for the next era of work",
-      "href": "https://openai.com/index/academy-courses-applying-ai-at-work",
-      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-      "category": "official",
-      "tags": [
-        "official",
-        "model",
-        "ai-news",
-        "watched-content"
-      ],
-      "source_name": "OpenAI News",
-      "published_at": "2026-06-12T10:00:00.000Z",
-      "discovered_at": "2026-06-22T13:19:47.350Z",
       "metrics": {},
       "score": 6,
       "origin": "watch",
@@ -212,6 +182,36 @@
       },
       "daily_score": 12,
       "next_action": "Extract one repeatable workflow and test it against the local AI learning workflow."
+    },
+    {
+      "id": "watch-dd73139d2e3dcd",
+      "title": "New OpenAI Academy courses for the next era of work",
+      "href": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
+      "category": "official",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "source_name": "OpenAI News",
+      "published_at": "2026-06-12T10:00:00.000Z",
+      "discovered_at": "2026-06-22T13:19:47.350Z",
+      "metrics": {},
+      "score": 6,
+      "origin": "watch",
+      "rules": {
+        "fresh": false,
+        "source": true,
+        "real_project": true,
+        "real_metric": true,
+        "complete": true,
+        "date_traceable": true,
+        "not_duplicate": true
+      },
+      "daily_score": 12,
+      "next_action": "Turn the strongest practical lesson into a reusable learning card."
     }
   ],
   "evaluated_count": 21,

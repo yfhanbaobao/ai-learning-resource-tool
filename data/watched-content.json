@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-25T15:15:41.712Z",
+  "generated_at": "2026-06-26T15:00:43.542Z",
   "items": [
     {
       "id": "watch-3d99cf87d464b7",
@@ -384,7 +384,7 @@
     }
   ],
   "discovery_run": {
-    "generated_at": "2026-06-25T15:15:41.695Z",
+    "generated_at": "2026-06-26T15:00:43.531Z",
     "attempted": 6,
     "completed": 5,
     "partial_coverage": true,
@@ -407,7 +407,7 @@
         "source_id": "huggingface_blog",
         "status": "warning",
         "result_count": 0,
-        "message": "https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT"
+        "message": "https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: This operation was aborted"
       },
       {
         "source_id": "github_trending_ai",
@@ -432,9 +432,9 @@
     ],
     "coverage_status": "partial",
     "item_retention": {
-      "existing_items_before": 19,
-      "existing_items_retained": 19,
-      "new_items_accepted": 1,
+      "existing_items_before": 20,
+      "existing_items_retained": 20,
+      "new_items_accepted": 0,
       "configured_max_items": 80,
       "effective_max_items": 80,
       "partial_coverage_retention": true
