@@ -1,6 +1,6 @@
 # LIGHT Content Watch Report
 
-- Date: 2026-06-26
+- Date: 2026-06-27
 - New candidates: 0
 - Coverage: partial
 - Completed sources: 5/6
@@ -11,7 +11,7 @@
 ## Coverage
 
 - Partial coverage: 5/6 sources completed; rate_limited=0; failed=0; warnings=1.
-- Item retention: kept 20/20 existing items; partial coverage retention active; configured item cap deferred until a complete run.
+- Item retention: kept 21/21 existing items; partial coverage retention active; configured item cap deferred until a complete run.
 - ok: openai_news results=12
 - warning: huggingface_blog results=0 - https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: This operation was aborted
 - no_results: github_trending_ai results=0

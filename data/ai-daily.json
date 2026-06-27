@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T15:00:53.337Z",
-  "title": "AI 日报 2026-06-26",
+  "generated_at": "2026-06-27T15:00:49.535Z",
+  "title": "AI 日报 2026-06-27",
   "summary": "今日筛选 7 条 AI 学习/自动化相关信号，来源于公开 allowlist 信源和本地候选资源池。",
   "selected": [
     {
@@ -214,7 +214,7 @@
       "next_action": "Turn the strongest practical lesson into a reusable learning card."
     }
   ],
-  "evaluated_count": 21,
+  "evaluated_count": 23,
   "rules": [
     "14 天时效",
     "HTTPS 来源可信",

@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "generated_at": "2026-06-26T15:00:43.542Z",
+  "generated_at": "2026-06-27T15:00:38.511Z",
   "items": [
+    {
+      "id": "watch-30f48121decc70",
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "href": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
+      "published_at": "2026-06-26T10:00:00.000Z",
+      "discovered_at": "2026-06-27T01:00:13.277Z",
+      "tags": [
+        "official",
+        "model",
+        "ai-news",
+        "watched-content"
+      ],
+      "metrics": {},
+      "status": "candidate",
+      "score": 4
+    },
     {
       "id": "watch-3d99cf87d464b7",
       "source_id": "openai_news",
@@ -384,7 +403,7 @@
     }
   ],
   "discovery_run": {
-    "generated_at": "2026-06-26T15:00:43.531Z",
+    "generated_at": "2026-06-27T15:00:38.499Z",
     "attempted": 6,
     "completed": 5,
     "partial_coverage": true,
@@ -432,8 +451,8 @@
     ],
     "coverage_status": "partial",
     "item_retention": {
-      "existing_items_before": 20,
-      "existing_items_retained": 20,
+      "existing_items_before": 21,
+      "existing_items_retained": 21,
       "new_items_accepted": 0,
       "configured_max_items": 80,
       "effective_max_items": 80,
