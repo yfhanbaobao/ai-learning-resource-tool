@@ -1,6 +1,6 @@
 # Online Resource Search Report
 
-- Generated date: 2026-06-27
+- Generated date: 2026-06-28
 - New candidates: 0
 - Existing candidates retained: 2
 - Coverage: partial
@@ -18,17 +18,17 @@
 - ok: hacker_news/Qwen coder local model tutorial results=1
 - ok: github_repositories/DeepSeek coder local development workflow results=2
 - no_results: hacker_news/DeepSeek coder local development workflow results=0
-- rate_limited: github_repositories/Vibe Coding prompt template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/Vibe Coding prompt template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - ok: hacker_news/Vibe Coding prompt template results=4
-- rate_limited: github_repositories/AI automation script examples beginners results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/AI automation script examples beginners results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - no_results: hacker_news/AI automation script examples beginners results=0
-- rate_limited: github_repositories/Cloudflare Pages static site tutorial AI tools results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/Cloudflare Pages static site tutorial AI tools results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - no_results: hacker_news/Cloudflare Pages static site tutorial AI tools results=0
-- rate_limited: github_repositories/AI side hustle starter landing page template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/AI side hustle starter landing page template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - no_results: hacker_news/AI side hustle starter landing page template results=0
-- rate_limited: github_repositories/AI prompt pack template side project results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/AI prompt pack template side project results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - no_results: hacker_news/AI prompt pack template side project results=0
-- rate_limited: github_repositories/AI productivity monetization template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- rate_limited: github_repositories/AI productivity monetization template results=0 github_authenticated=false - 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 - no_results: hacker_news/AI productivity monetization template results=0
 
 ## New Candidates
@@ -39,12 +39,12 @@
 
 ## Rate Limits
 
-- github_repositories/Vibe Coding prompt template: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
-- github_repositories/AI automation script examples beginners: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
-- github_repositories/Cloudflare Pages static site tutorial AI tools: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
-- github_repositories/AI side hustle starter landing page template: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
-- github_repositories/AI prompt pack template side project: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
-- github_repositories/AI productivity monetization template: 403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false
+- github_repositories/Vibe Coding prompt template: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
+- github_repositories/AI automation script examples beginners: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
+- github_repositories/Cloudflare Pages static site tutorial AI tools: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
+- github_repositories/AI side hustle starter landing page template: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
+- github_repositories/AI prompt pack template side project: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
+- github_repositories/AI productivity monetization template: 403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false
 
 ## Errors
 

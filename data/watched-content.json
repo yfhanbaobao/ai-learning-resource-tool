@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-27T15:00:38.511Z",
+  "generated_at": "2026-06-28T15:00:37.494Z",
   "items": [
     {
       "id": "watch-30f48121decc70",
@@ -403,7 +403,7 @@
     }
   ],
   "discovery_run": {
-    "generated_at": "2026-06-27T15:00:38.499Z",
+    "generated_at": "2026-06-28T15:00:37.479Z",
     "attempted": 6,
     "completed": 5,
     "partial_coverage": true,
@@ -426,7 +426,7 @@
         "source_id": "huggingface_blog",
         "status": "warning",
         "result_count": 0,
-        "message": "https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: This operation was aborted"
+        "message": "https://huggingface.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT; https://hf.co/blog/feed.xml: fetch failed; UND_ERR_CONNECT_TIMEOUT"
       },
       {
         "source_id": "github_trending_ai",

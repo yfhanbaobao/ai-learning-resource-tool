@@ -403,7 +403,7 @@
     }
   ],
   "candidate_discovery": {
-    "generated_at": "2026-06-27T15:00:47.529Z",
+    "generated_at": "2026-06-28T15:00:45.354Z",
     "attempted": 18,
     "completed": 12,
     "partial_coverage": true,
@@ -457,10 +457,10 @@
         "query": "Vibe Coding prompt template",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -473,10 +473,10 @@
         "query": "AI automation script examples beginners",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -489,10 +489,10 @@
         "query": "Cloudflare Pages static site tutorial AI tools",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -505,10 +505,10 @@
         "query": "AI side hustle starter landing page template",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -521,10 +521,10 @@
         "query": "AI prompt pack template side project",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -537,10 +537,10 @@
         "query": "AI productivity monetization template",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 36.148.206.204. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-27T15:01:35.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-27T15:01:35.000Z"
+        "reset_at": "2026-06-28T15:01:32.000Z"
       },
       {
         "source_id": "hacker_news",
