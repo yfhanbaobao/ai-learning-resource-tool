@@ -365,6 +365,24 @@
       "promoted_at": "2026-06-23"
     },
     {
+      "id": "candidate-ff5638455e7a58",
+      "title": "sumitcoin/pythoncode",
+      "category": "自动化脚本案例",
+      "summary": "A personal repository for learning and practicing Python programming. It includes beginner to advanced concepts, coding challenges, automation scripts, data structures, algorithms, AI examples, and real-world projects.",
+      "href": "https://github.com/sumitcoin/pythoncode",
+      "copyText": "请分析这个开源项目是否适合作为 AI 学习资源：https://github.com/sumitcoin/pythoncode",
+      "status": "candidate",
+      "priority": "review",
+      "tags": [
+        "github",
+        "auto-discovered"
+      ],
+      "discovered_at": "2026-06-29T01:00:42.246Z",
+      "discovered_by": "resource-search-agent",
+      "source_query": "AI automation script examples beginners",
+      "score": 4
+    },
+    {
       "id": "candidate-19a47a740a85ea",
       "title": "Creatorflowknowledge/CreatorFlow-",
       "category": "AI副业启动页",
@@ -403,24 +421,28 @@
     }
   ],
   "candidate_discovery": {
-    "generated_at": "2026-06-28T15:00:45.354Z",
+    "generated_at": "2026-06-29T15:01:38.448Z",
     "attempted": 18,
-    "completed": 12,
+    "completed": 13,
     "partial_coverage": true,
-    "rate_limited": 6,
+    "rate_limited": 5,
     "failed": 0,
-    "no_results": 9,
+    "no_results": 10,
     "by_status": {
-      "no_results": 9,
-      "ok": 3,
-      "rate_limited": 6
+      "rate_limited": 5,
+      "no_results": 10,
+      "ok": 3
     },
     "details": [
       {
         "source_id": "github_repositories",
         "query": "Ollama Windows tutorial local LLM",
-        "status": "no_results",
-        "result_count": 0
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-29T15:01:33.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-29T15:01:33.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -431,8 +453,12 @@
       {
         "source_id": "github_repositories",
         "query": "Qwen coder local model tutorial",
-        "status": "no_results",
-        "result_count": 0
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-29T15:01:33.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-29T15:01:33.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -443,8 +469,12 @@
       {
         "source_id": "github_repositories",
         "query": "DeepSeek coder local development workflow",
-        "status": "ok",
-        "result_count": 2
+        "status": "rate_limited",
+        "result_count": 0,
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-29T15:01:33.000Z; github_authenticated=false",
+        "github_authenticated": false,
+        "retry_after": "",
+        "reset_at": "2026-06-29T15:01:33.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -457,10 +487,10 @@
         "query": "Vibe Coding prompt template",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-29T15:01:33.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "reset_at": "2026-06-29T15:01:33.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -473,10 +503,10 @@
         "query": "AI automation script examples beginners",
         "status": "rate_limited",
         "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
+        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-29T15:01:33.000Z; github_authenticated=false",
         "github_authenticated": false,
         "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "reset_at": "2026-06-29T15:01:33.000Z"
       },
       {
         "source_id": "hacker_news",
@@ -487,12 +517,8 @@
       {
         "source_id": "github_repositories",
         "query": "Cloudflare Pages static site tutorial AI tools",
-        "status": "rate_limited",
-        "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
-        "github_authenticated": false,
-        "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "status": "no_results",
+        "result_count": 0
       },
       {
         "source_id": "hacker_news",
@@ -503,12 +529,8 @@
       {
         "source_id": "github_repositories",
         "query": "AI side hustle starter landing page template",
-        "status": "rate_limited",
-        "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
-        "github_authenticated": false,
-        "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "status": "no_results",
+        "result_count": 0
       },
       {
         "source_id": "hacker_news",
@@ -519,12 +541,8 @@
       {
         "source_id": "github_repositories",
         "query": "AI prompt pack template side project",
-        "status": "rate_limited",
-        "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
-        "github_authenticated": false,
-        "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "status": "no_results",
+        "result_count": 0
       },
       {
         "source_id": "hacker_news",
@@ -535,12 +553,8 @@
       {
         "source_id": "github_repositories",
         "query": "AI productivity monetization template",
-        "status": "rate_limited",
-        "result_count": 0,
-        "message": "403 rate limit exceeded: API rate limit exceeded for 120.227.215.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.); reset_at=2026-06-28T15:01:32.000Z; github_authenticated=false",
-        "github_authenticated": false,
-        "retry_after": "",
-        "reset_at": "2026-06-28T15:01:32.000Z"
+        "status": "ok",
+        "result_count": 1
       },
       {
         "source_id": "hacker_news",
@@ -551,8 +565,8 @@
     ],
     "coverage_status": "partial",
     "candidate_retention": {
-      "existing_candidates_before": 2,
-      "existing_candidates_retained": 2,
+      "existing_candidates_before": 3,
+      "existing_candidates_retained": 3,
       "new_candidates_accepted": 0,
       "configured_max_candidates": 40,
       "effective_max_candidates": 40,
